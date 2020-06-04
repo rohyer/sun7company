@@ -1,0 +1,19 @@
+#brands-banners {
+    float: left;
+    width: 100%;
+    background-color: #000;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            img {
+                width: auto;
+                height: auto;
+                margin: auto;
+            }
+        }
+    }
+}

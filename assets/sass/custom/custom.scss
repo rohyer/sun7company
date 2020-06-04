@@ -1,0 +1,30 @@
+.container-custom{
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 576px) {
+        max-width: 680px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 900px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 1080px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1420px;
+    }
+}
+
+.header-fixed {
+    position: fixed !important;
+    background-color: #3F3F3F;
+    margin-top: 0px;
+    transition-duration: .6s;
+}
