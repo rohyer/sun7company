@@ -13771,12 +13771,15 @@ section.main-contents {
   float: left;
   width: 100%;
   height: auto;
-  padding: 45px 0 0 0;
+  padding: 35px 0 35px 0;
   background-color: #FFF; }
   section.main-contents h4 {
     font-family: 'Montserrat';
     font-size: 30px;
-    margin-bottom: 25px; }
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-left: 8px solid #000;
+    padding: 8px 0 8px 10px; }
 
 section#contact {
   width: 100%;
@@ -13787,25 +13790,62 @@ section#contact {
     font-size: 30px; }
 
 footer {
+  float: left;
   width: 100%;
   height: auto;
-  padding: 75px 0;
-  background-color: #F0F0F0; }
+  padding: 50px 0;
+  background-color: #222; }
   footer h6 {
     font-family: 'Montserrat';
-    font-size: 24px;
-    margin-bottom: 30px; }
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    border-left: 2px solid #d93;
+    padding-left: 10px; }
   footer ul {
     margin: 0;
     padding: 0; }
+    footer ul#footer-attendance li {
+      margin-bottom: 20px; }
     footer ul li {
+      float: left;
+      width: 100%;
       list-style: none;
       font-family: 'Roboto';
       font-size: 16px;
+      color: #fff;
       margin-bottom: 10px; }
+      footer ul li #whatsapp-contact-footer {
+        float: left; }
+        footer ul li #whatsapp-contact-footer span {
+          float: left;
+          width: 100%; }
+      footer ul li #attendance-contact-footer {
+        float: left;
+        width: 140px; }
+        footer ul li #attendance-contact-footer span {
+          float: left;
+          width: 100%; }
+      footer ul li span {
+        color: #fff; }
+        footer ul li span#whatsapp-icon, footer ul li span#attendance-icon {
+          float: left;
+          margin-right: 10px; }
+        footer ul li span i {
+          color: green;
+          font-size: 40px;
+          margin-top: 3px; }
+          footer ul li span i#clock {
+            color: #d79316;
+            font-size: 35px; }
       footer ul li a {
         text-transform: none;
-        color: initial; }
+        color: #fff; }
+    footer ul#footer-my-account h6#safe-store {
+      float: left;
+      width: 100%;
+      margin-top: 20px; }
 
 .products-home-carousel li.product {
   text-align: center;
@@ -13839,11 +13879,49 @@ footer {
     font-style: normal;
     color: #000; }
 
-#sb_instagram {
+section#instagram h4 a {
+  color: #000;
+  text-decoration: none; }
+section#instagram #sb_instagram {
   margin-top: 15px;
   margin-bottom: 45px; }
-  #sb_instagram .sbi_header_text p.sbi_bio {
+  section#instagram #sb_instagram .sbi_header_text p.sbi_bio {
     font-size: 20px;
     font-weight: 500; }
+
+section#testimonials h4 {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  margin-bottom: 25px;
+  border-left: 8px solid #000;
+  padding: 8px 0 8px 10px; }
+section#testimonials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  section#testimonials ul li.testimonial-post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 160px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 15px; }
+    section#testimonials ul li.testimonial-post .testimonial-excerpt {
+      height: 100px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic; }
+    section#testimonials ul li.testimonial-post .testimonial-title {
+      float: left;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal; }
+    section#testimonials ul li.testimonial-post .testimonial-date {
+      float: right;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 3px; }
 
 /*# sourceMappingURL=style.css.map */

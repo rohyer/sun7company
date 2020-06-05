@@ -8,6 +8,8 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
 <?php wp_body_open(); ?>
     <header>
         <div class="container">

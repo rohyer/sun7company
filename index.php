@@ -12,7 +12,8 @@
 
     <?php get_template_part('elements/e', 'sneakers'); ?>
 
-    <?php get_template_part('elements/e', 'instagram'); ?>
+    <?php get_template_part('elements/e', 'testimonials'); ?>
 
+    <?php get_template_part('elements/e', 'instagram'); ?>
 
 <?php get_footer(); ?>

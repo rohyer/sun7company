@@ -79,6 +79,7 @@ function mytheme_customize_register( $wp_customize ) {
             'placeholder' => __('(99) 9999-9999'),
         ),
     ));
+    
 
     $wp_customize->add_setting( 'contact_1_section_name' );
 
@@ -88,6 +89,28 @@ function mytheme_customize_register( $wp_customize ) {
         'label' => __('Insira o tipo de contato', 'odin'),
         'input_attrs' => array(
             'placeholder' => __('Whatsapp'),
+        ),
+    ));
+
+    $wp_customize->add_setting( 'date_section_name' );
+
+    $wp_customize->add_control('date_section_name', array(
+        'type' => 'text',
+        'section' => 'section_footer',
+        'label' => __('Insira dias da semana e horário de atendimento', 'odin'),
+        'input_attrs' => array(
+            'placeholder' => __('Segunda a sexta'),
+        ),
+    ));
+
+    $wp_customize->add_setting( 'hour_section_name' );
+
+    $wp_customize->add_control('hour_section_name', array(
+        'type' => 'text',
+        'section' => 'section_footer',
+        'label' => __('Insira o horário de atendimento', 'odin'),
+        'input_attrs' => array(
+            'placeholder' => __('9h as 18h'),
         ),
     ));
 

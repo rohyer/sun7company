@@ -1,28 +1,91 @@
 footer {
+    float: left;
     width: 100%;
     height: auto;
-    padding: 75px 0;
-    background-color: #F0F0F0;
+    padding: 50px 0;
+    background-color: #222;
 
     h6 {
         font-family: 'Montserrat';
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #fff;
+        border-left: 2px solid #d93;
+        padding-left: 10px;
     }
 
     ul {
         margin: 0;
         padding: 0;
 
+        &#footer-attendance {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
         li {
+            float: left;
+            width: 100%;
             list-style: none;
             font-family: 'Roboto';
             font-size: 16px;
+            color: #fff;
             margin-bottom: 10px;
+
+            #whatsapp-contact-footer {
+                float: left;
+
+                span {
+                    float: left;
+                    width: 100%;
+                }
+            }
+
+            #attendance-contact-footer {
+                float: left;
+                width: 140px;
+
+                span {
+                    float: left;
+                    width: 100%;
+                }
+            }
+
+            span {
+                color: #fff;
+
+                &#whatsapp-icon, &#attendance-icon {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+                i {
+                    color: green;
+                    font-size: 40px;
+                    margin-top: 3px;
+
+                    &#clock {
+                        color: #d79316;
+                        font-size: 35px;
+                    }
+                }
+            }
 
             a{
                 text-transform: none;
-                color: initial;
+                color: #fff;
+            }
+        }
+
+        &#footer-my-account {
+            h6 {
+                &#safe-store {
+                    float: left;
+                    width: 100%;
+                    margin-top: 20px;
+                }
             }
         }
     }

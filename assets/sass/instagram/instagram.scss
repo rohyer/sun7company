@@ -1,13 +1,24 @@
-#sb_instagram {
-    margin-top: 15px;
-    margin-bottom: 45px;
+section {
+    &#instagram {
+        h4 {
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
 
-    .sbi_header_text {
-       p {
-           &.sbi_bio {
-               font-size: 20px;
-               font-weight: 500;
-           }
-       } 
+        #sb_instagram {
+            margin-top: 15px;
+            margin-bottom: 45px;
+        
+            .sbi_header_text {
+               p {
+                   &.sbi_bio {
+                       font-size: 20px;
+                       font-weight: 500;
+                   }
+               } 
+            }
+        }
     }
 }

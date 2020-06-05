@@ -41,6 +41,28 @@ $('#brands-banners ul').owlCarousel({
 	}
 });
 
+$('#testimonials ul').owlCarousel({
+	loop: true,
+	autoplay: false,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: false,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		0:{
+			items: 1
+		},
+		600:{
+			items: 2
+		},
+		1000:{
+			items: 3
+		}
+	}
+});
+
 // $('#tshirts ul').owlCarousel({
 // 	loop: false,
 // 	autoplay: true,
