@@ -66,9 +66,17 @@ footer {
                     font-size: 40px;
                     margin-top: 3px;
 
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        font-size: 22px;
+                    }
+
                     &#clock {
                         color: #d79316;
                         font-size: 35px;
+
+                        @media (min-width: 992px) and (max-width: 1199px) {
+                            font-size: 17px;
+                        }
                     }
                 }
             }
@@ -85,6 +93,36 @@ footer {
                     float: left;
                     width: 100%;
                     margin-top: 20px;
+                }
+            }
+
+            @media (max-width: 991px) {
+                margin-top: 30px;
+            }
+        }
+
+        &.footer-content {
+
+            a {
+                text-decoration: none;
+            }
+
+            @media (max-width: 577px) {
+                margin-top: 30px;
+            }
+        }
+
+        &#footer-facebook {
+            @media (max-width: 991px) {
+                margin-top: 30px;
+            }
+
+            iframe {
+                @media (min-width: 578px) and (max-width: 768px) {
+                    width: 250px !important;
+                }
+                @media (max-width: 567px) {
+                    width: 100% !important;
                 }
             }
         }

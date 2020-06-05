@@ -13594,6 +13594,10 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
 
+body {
+  float: left;
+  width: 100%; }
+
 .container-custom {
   width: 100%;
   padding-right: 25px;
@@ -13695,6 +13699,24 @@ header {
           height: 100%;
           color: #FFF;
           text-decoration: none; }
+          #bottom-header #bottom-header-container #product-categories-header li a i {
+            font-size: 26px; }
+          #bottom-header #bottom-header-container #product-categories-header li a#header-mini-cart {
+            position: relative; }
+            #bottom-header #bottom-header-container #product-categories-header li a#header-mini-cart i {
+              font-size: 26px; }
+            #bottom-header #bottom-header-container #product-categories-header li a#header-mini-cart span#products-quantity {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              top: 6px;
+              left: 24px;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #dd9933;
+              color: #fff; }
         #bottom-header #bottom-header-container #product-categories-header li:hover ul.second-level {
           display: block;
           visibility: visible; }
@@ -13836,9 +13858,15 @@ footer {
           color: green;
           font-size: 40px;
           margin-top: 3px; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            footer ul li span i {
+              font-size: 22px; } }
           footer ul li span i#clock {
             color: #d79316;
             font-size: 35px; }
+            @media (min-width: 992px) and (max-width: 1199px) {
+              footer ul li span i#clock {
+                font-size: 17px; } }
       footer ul li a {
         text-transform: none;
         color: #fff; }
@@ -13846,6 +13874,23 @@ footer {
       float: left;
       width: 100%;
       margin-top: 20px; }
+    @media (max-width: 991px) {
+      footer ul#footer-my-account {
+        margin-top: 30px; } }
+    footer ul.footer-content a {
+      text-decoration: none; }
+    @media (max-width: 577px) {
+      footer ul.footer-content {
+        margin-top: 30px; } }
+    @media (max-width: 991px) {
+      footer ul#footer-facebook {
+        margin-top: 30px; } }
+    @media (min-width: 578px) and (max-width: 768px) {
+      footer ul#footer-facebook iframe {
+        width: 250px !important; } }
+    @media (max-width: 567px) {
+      footer ul#footer-facebook iframe {
+        width: 100% !important; } }
 
 .products-home-carousel li.product {
   text-align: center;

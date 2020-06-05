@@ -1,5 +1,5 @@
 $('#main-banners ul').owlCarousel({
-	loop: true,
+	loop: false,
 	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,

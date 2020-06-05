@@ -27,16 +27,17 @@
                     <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
 
-                 <!--<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
+                 <div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
+
                     <?php
 
                     // wp_nav_menu( array(
-                    //     'menu' => 'menu',
-                    //     'theme_location' => 'menu'
+                    //     'menu' => 3,
+                    //     'theme_location' => 3
                     // ));
 
                     ?>
-                </div>-->
+                </div>
             </div>
         </div>        
     </header>
@@ -92,8 +93,19 @@
                                 }
 
                             echo '</li>';
-                        }
-                        echo '</ul>';
+                        } ?>
+
+                        <?php global $woocommerce; ?>
+                        <li>
+                            <a id="header-mini-cart" href="<?php echo esc_url( get_page_link(9)) ?>">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="products-quantity"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                            </a>
+                        </li>
+
+                        <li><a href="<?php echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i></a></li>
+
+                        <?php echo '</ul>';
                     }
 
                     
