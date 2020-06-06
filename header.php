@@ -12,34 +12,72 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
 <?php wp_body_open(); ?>
     <header>
-        <div class="container">
-            <div class="row">
-                <div id="logo" class="d-flex justify-content-center justify-content-md-start col-md-3 col-lg-3 col-xl-2">
-                    <h1><a href="./loja"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
+        <div id="desktop-header">
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="d-none justify-content-center justify-content-lg-start d-lg-flex col-lg-3 col-xl-2">
+                        <h1><a href="./loja"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
+                    </div>
+
+                    <div id="main-search" class="d-none d-md-flex col-lg-7 col-xl-7 justify-content-lg-end">
+                    </div>
+
+                    <div id="social-media-header" class="d-none d-lg-flex col-lg-2 col-xl-3 justify-content-lg-end">
+                        <a href="https://pt-br.facebook.com/sun7company/?ref=page_internal"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sun7company_/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <!--<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
+
+                        <?php
+
+                        // wp_nav_menu( array(
+                        //     'menu' => 3,
+                        //     'theme_location' => 3
+                        // ));
+
+                        ?>
+                    </div> -->
                 </div>
+            </div>   
+        </div>
 
-                <div id="main-search" class="d-none d-md-flex col-lg-7 col-xl-7 justify-content-md-end">
-                </div>
+        <div id="mobile-header">
+            <div class="container">
+                <div class="row">
+                    <div id="main-icon" class="d-flex col-3 d-lg-none">
+                        <div id="btn-icon" class="menu-closed">
+                            <span class="hamburger"></span>
+                        </div>
+                    </div>
 
-                <div id="social-media-header" class="d-none d-md-flex col-lg-2 col-xl-3 justify-content-md-end">
-                    <a href="https://pt-br.facebook.com/sun7company/?ref=page_internal"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/sun7company_/?hl=pt-br"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                </div>
+                    <nav id="responsive-menu" class="d-lg-none">
+                        <ul id="menu-list">
+                            <h6>Menu</h6>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Portfolio</a></li>
+                            <li><a href="#clients">Clients</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
 
-                 <div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
+                    <div id="mobile-logo" class="d-flex col-6 justify-content-center d-lg-none">
+                        <h1><a href="./loja"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
+                    </div>
 
-                    <?php
-
-                    // wp_nav_menu( array(
-                    //     'menu' => 3,
-                    //     'theme_location' => 3
-                    // ));
-
-                    ?>
+                    <div id="mobile-mini-cart" class="d-flex col-3 d-lg-none">
+                        <?php global $woocommerce; ?>
+                        <a id="mobile-header-mini-cart" href="<?php echo esc_url( get_page_link(9)) ?>">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="products-quantity"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </header>
 
     <section id="bottom-header">
@@ -94,12 +132,10 @@
 
                             echo '</li>';
                         } ?>
-
-                        <?php global $woocommerce; ?>
                         <li>
                             <a id="header-mini-cart" href="<?php echo esc_url( get_page_link(9)) ?>">
                             <i class="fas fa-shopping-cart"></i>
-                            <span id="products-quantity"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                            <span class="products-quantity"><?php echo $woocommerce->cart->cart_contents_count; ?></span>
                             </a>
                         </li>
 

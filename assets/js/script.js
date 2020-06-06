@@ -63,6 +63,40 @@ $('#testimonials ul').owlCarousel({
 	}
 });
 
+
+// FUNÇÃO PARA ABRIR MENU RESPONSIVO
+
+function sizeMenuResponsive() {
+	const responsiveMenuHeight = document.getElementById('responsive-menu')
+	const windowHeightMenu = window.innerHeight;
+	const windowHeightMenuPX = windowHeightMenu - 55;
+	const windowHeightMenuFinal = windowHeightMenuPX + 'px';
+
+	responsiveMenuHeight.style.height = windowHeightMenuFinal;
+}
+sizeMenuResponsive();
+
+const btnIcon = document.getElementById('btn-icon');
+btnIcon.addEventListener('click', openCloseMenu)
+function openCloseMenu(){
+	let responsiveMenu = document.getElementById('responsive-menu')
+	let body = document.getElementsByTagName('body')[0]
+	console.log(btnIcon.className)
+
+	if (btnIcon.className == 'menu-closed') {
+		btnIcon.classList.remove('menu-closed')
+		btnIcon.classList.add('menu-opened')
+		responsiveMenu.classList.add('open-menu-responsive')
+		body.style.overflow = 'hidden'
+	} else if (btnIcon.className == 'menu-opened') {
+		btnIcon.classList.remove('menu-opened')
+		btnIcon.classList.add('menu-closed')
+		responsiveMenu.classList.remove('open-menu-responsive')
+		body.style.overflow = 'initial'
+	}
+}
+
+
 // $('#tshirts ul').owlCarousel({
 // 	loop: false,
 // 	autoplay: true,

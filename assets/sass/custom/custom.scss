@@ -33,3 +33,41 @@ body {
     margin-top: 0px;
     transition-duration: .6s;
 }
+
+.menu-opened {
+    span {
+        &.hamburger {
+            float: left;
+            position: relative;
+            width: 30px;
+            height: 2px;
+            background-color: #FFFFFF;
+            transition: all .3s linear;
+            background-color: transparent;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: -8px;
+                left: 0;
+                width: 30px;
+                height: 2px;
+                background-color: #FFFFFF;
+                transform: translate(0px, 8px) rotate(45deg);
+                transition: all .3s linear;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                bottom: -8px;
+                left: 0;
+                width: 30px;
+                height: 2px;
+                background-color: #FFFFFF;
+                transform: translate(0px, -8px) rotate(-45deg);
+                transition: all .3s linear;
+            }
+        }
+    }
+}
