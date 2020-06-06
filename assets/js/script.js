@@ -63,6 +63,8 @@ $('#testimonials ul').owlCarousel({
 	}
 });
 
+const doc = document;
+
 
 // FUNÇÃO PARA ABRIR MENU RESPONSIVO
 
@@ -95,6 +97,34 @@ function openCloseMenu(){
 		body.style.overflow = 'initial'
 	}
 }
+
+// FUNÇÃO PARA ABRIR SEGUNDO NÍVEL DO MENU RESPOSIVO
+function openCloseSecondLevelMenu() {
+	const mobileMenuArrowDown = doc.getElementsByClassName('mobile-menu-arrow-down');
+	const mobileMenuArrowDownLength = mobileMenuArrowDown.length;
+	
+	for (let i = 0; i < mobileMenuArrowDownLength; i++) {
+		mobileMenuArrowDown[i].addEventListener("click", function(e) {
+			const closeSecondLevel = doc.getElementsByClassName('listener-second-level')[i];
+			
+			// let a = closeSecondLevel.classList[0];
+			// console.log(a);
+
+			if (closeSecondLevel.classList[1] == 'closed-mobile-second-level') {
+				mobileMenuArrowDown[i].classList.remove('fa-chevron-down');
+				mobileMenuArrowDown[i].classList.add('fa-chevron-up');
+				closeSecondLevel.classList.remove('closed-mobile-second-level');
+				closeSecondLevel.classList.add('opened-mobile-second-level');
+			} else if (closeSecondLevel.classList[1] == 'opened-mobile-second-level') {
+				mobileMenuArrowDown[i].classList.remove('fa-chevron-up');
+				mobileMenuArrowDown[i].classList.add('fa-chevron-down');
+				closeSecondLevel.classList.remove('opened-mobile-second-level');
+				closeSecondLevel.classList.add('closed-mobile-second-level');
+			}
+		});
+	}
+}
+openCloseSecondLevelMenu();
 
 
 // $('#tshirts ul').owlCarousel({

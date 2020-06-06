@@ -53,14 +53,73 @@
                     </div>
 
                     <nav id="responsive-menu" class="d-lg-none">
-                        <ul id="menu-list">
-                            <h6>Menu</h6>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#work">Portfolio</a></li>
-                            <li><a href="#clients">Clients</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                        <ul class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="menu-list">
+                                        <h6>Menu</h6>
+
+                                        <h5><a href="<?php echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i></a></h5>
+                                        
+                                        <?php
+
+                                        $cat_args_mobile = array(
+                                            'taxonomy' => 'category',
+                                            'orderby' => 'menu_order',
+                                            'hide_empty' => false,
+                                            'exclude' => 15,
+                                            'parent' => 0,
+                                        );
+                                        
+                                        $product_categories_mobile = get_terms( 'product_cat', $cat_args_mobile );
+                                        
+                                        if( !empty($product_categories_mobile) ){
+                                            echo '<ul id="mobile-product-categories-header" class="top-level">';
+                                            
+                                            foreach ($product_categories_mobile as $key => $category) {
+
+                                                $firstTheCatIdMobile = get_term_by( 'slug', $category->name, 'product_cat' );
+                                                $firstTermIdMobile = $firstTheCatIdMobile->term_id;
+
+                                                $firstTermChildMobile = get_term_children( $firstTermIdMobile, 'product_cat');
+                                                
+                                                
+                                                //echo '<li class="closed-mobile-second-level">';
+                                                //echo '<a href="'.get_term_link($category).'" >';
+                                                if ( !empty($firstTermChildMobile) ) {
+                                                    echo '<li class="listener-second-level closed-mobile-second-level">';
+                                                    echo '<a href="'.get_term_link($category).'" >' . $category->name . '</a>' . '<i class="mobile-menu-arrow-down fas fa-chevron-down"></i>';
+                                                } else {
+                                                    echo '<li>';
+                                                    echo '<a href="'.get_term_link($category).'" >' . $category->name . '</a>';
+                                                }
+                                                //echo '</a>';
+                                                //echo ;
+
+                                                    $theCatIdMobile = get_term_by( 'slug', $category->name, 'product_cat');
+                                                    $termIdMobile = $theCatIdMobile->term_id;
+                                                    
+                                                    $termchildrenMobile = get_term_children( $termIdMobile, 'product_cat' );
+
+                                                    if ( !empty($termchildrenMobile) ) {
+
+                                                        echo '<ul class="mobile-second-level">';
+                                                            foreach ( $termchildrenMobile as $child ) {
+                                                                $term = get_term_by( 'id', $child, 'product_cat' );
+                                                                echo '<li><a href="' . get_term_link( $child, 'product_cat' ) . '">' . $term->name . '</a></li>';
+                                                            }
+                                                        echo '</ul>';
+                                                    }
+
+                                                echo '</li>';
+                                            }
+                                            echo '</ul>';
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
+
                         </ul>
                     </nav>
 
