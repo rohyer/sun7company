@@ -16,4 +16,6 @@
 
     <?php get_template_part('elements/e', 'instagram'); ?>
 
+    <?php get_template_part('elements/e', 'leads'); ?>
+
 <?php get_footer(); ?>

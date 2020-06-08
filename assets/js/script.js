@@ -1,5 +1,5 @@
 $('#main-banners ul').owlCarousel({
-	loop: false,
+	loop: true,
 	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
@@ -21,7 +21,7 @@ $('#main-banners ul').owlCarousel({
 });
 
 $('#brands-banners ul').owlCarousel({
-	loop: false,
+	loop: true,
 	autoplay: false,
 	// autoplayTimeout: 2500,
 	// autoplaySpeed: true,
@@ -33,9 +33,18 @@ $('#brands-banners ul').owlCarousel({
 			items: 2
 		},
 		600:{
-			items: 6
+			items: 2
 		},
-		1000:{
+		620:{
+			items: 3
+		},
+		900:{
+			items: 4
+		},
+		992:{
+			items: 5
+		},
+		1199:{
 			items: 6
 		}
 	}
@@ -43,10 +52,10 @@ $('#brands-banners ul').owlCarousel({
 
 $('#testimonials ul').owlCarousel({
 	loop: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
-	autoplaySpeed: false,
+	autoplaySpeed: 750,
 	dots: false,
 	navText: [" ", " "],
 	responsiveClass: true,
