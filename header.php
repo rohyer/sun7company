@@ -15,14 +15,17 @@
         <div id="desktop-header">
             <div class="container">
                 <div class="row">
-                    <div id="logo" class="d-none justify-content-center justify-content-lg-start d-lg-flex col-lg-3 col-xl-2">
+                    <div id="logo" class="d-none justify-content-center justify-content-lg-start d-lg-flex col-lg-3 col-xl-3">
                         <h1><a href="./loja"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
                     </div>
 
-                    <div id="main-search" class="d-none d-md-flex col-lg-7 col-xl-7 justify-content-lg-end">
+                    <div id="main-search" class="d-none d-lg-flex col-lg-6 col-xl-6 justify-content-lg-start align-items-lg-center">
+
+                            <?php get_template_part( 'product_search_form'); ?>
+
                     </div>
 
-                    <div id="social-media-header" class="d-none d-lg-flex col-lg-2 col-xl-3 justify-content-lg-end">
+                    <div id="social-media-header" class="d-none d-lg-flex col-lg-3 col-xl-3 justify-content-lg-end">
                         <a href="https://pt-br.facebook.com/sun7company/?ref=page_internal"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/sun7company_/?hl=pt-br"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fas fa-envelope"></i></a>
