@@ -62,7 +62,9 @@
                                     <div id="menu-list">
                                         <h6><a href="<?php echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i> Minha conta</a></h6>
 
-                                        <!-- <h5><a href="<?php //echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i></a></h5> -->
+                                        <div id="responsive-search">
+                                            <?php get_template_part( 'product_search_form'); ?>
+                                        </div>
                                         
                                         <?php
 

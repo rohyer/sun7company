@@ -26,6 +26,14 @@ $args = array(
                         <div class="testimonial-excerpt">
                             <?php the_excerpt(); ?>
                         </div>
+
+                        <div class="testimonial-stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
                         <div class="testimonial-title">
                             <?php the_title(); ?>
                         </div>

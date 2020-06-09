@@ -13807,7 +13807,7 @@ header nav#responsive-menu {
         padding-top: 25px;
         padding-bottom: 25px;
         margin: 0;
-        border-bottom: 1px solid #000; }
+        border-bottom: 1px solid #555; }
         header nav#responsive-menu ul #menu-list h6 a {
           display: flex;
           align-items: baseline;
@@ -13916,6 +13916,40 @@ header nav#responsive-menu {
       color: #fff; }
     #main-search form#searchform button#searchsubmit:focus {
       outline: none; }
+
+#responsive-search {
+  float: left;
+  width: 100%;
+  margin-top: 20px; }
+  #responsive-search form#searchform {
+    position: relative;
+    width: 100%; }
+    #responsive-search form#searchform input#s {
+      width: 100%;
+      text-indent: 10px;
+      height: 40px;
+      background: transparent;
+      color: #777;
+      border: 1px solid #bbb;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal; }
+      #responsive-search form#searchform input#s:focus {
+        outline: none; }
+    #responsive-search form#searchform button#searchsubmit {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: transparent;
+      border: none;
+      z-index: 999; }
+      #responsive-search form#searchform button#searchsubmit i {
+        color: #000; }
+      #responsive-search form#searchform button#searchsubmit:focus {
+        outline: none; }
 
 @media (min-width: 992px) {
   #bottom-header {
@@ -14100,6 +14134,7 @@ section#testimonials ul {
     border: 1px solid #ccc;
     border-radius: 5px;
     height: 160px;
+    margin-top: 7px;
     margin-right: 5px;
     margin-left: 5px;
     padding: 15px; }
@@ -14120,6 +14155,13 @@ section#testimonials ul {
       font-weight: 400;
       font-style: normal;
       margin-top: 3px; }
+    section#testimonials ul li.testimonial-post .testimonial-stars {
+      position: absolute;
+      top: -5px;
+      right: 15px;
+      background-color: #fff; }
+      section#testimonials ul li.testimonial-post .testimonial-stars span {
+        color: gold; }
 
 section#instagram h4 a {
   color: #000;

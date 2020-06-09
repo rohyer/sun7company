@@ -46,3 +46,57 @@
         }
     }
 }
+
+#responsive-search {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+    form {
+        &#searchform {
+            position: relative;
+            width: 100%;
+
+            input {
+                &#s {
+                    width: 100%;
+                    text-indent: 10px;
+                    height: 40px;
+                    background: transparent;
+                    color: #777;
+                    border: 1px solid #bbb;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-style: normal;
+                    
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            button {
+                &#searchsubmit {
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: transparent;
+                    border: none;
+                    z-index: 999;
+
+                    i {
+                        color: #000;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
