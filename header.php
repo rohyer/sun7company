@@ -60,9 +60,9 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div id="menu-list">
-                                        <h6>Menu</h6>
+                                        <h6><a href="<?php echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i> Minha conta</a></h6>
 
-                                        <h5><a href="<?php echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i></a></h5>
+                                        <!-- <h5><a href="<?php //echo esc_url( get_page_link(11)) ?>"><i class="fas fa-user-alt"></i></a></h5> -->
                                         
                                         <?php
 

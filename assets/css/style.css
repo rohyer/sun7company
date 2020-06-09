@@ -13778,8 +13778,7 @@ header nav#responsive-menu {
   height: 93%;
   visibility: hidden;
   opacity: 0;
-  background-color: #222;
-  padding-top: 30px;
+  background-color: #fff;
   padding-bottom: 30px;
   z-index: 999;
   transition: all .3s ease-out;
@@ -13793,79 +13792,100 @@ header nav#responsive-menu {
     opacity: 100%; }
   header nav#responsive-menu ul {
     list-style: none; }
-    header nav#responsive-menu ul #menu-list h6 {
+    header nav#responsive-menu ul #menu-list {
       float: left;
-      width: 50%;
-      font-family: "Montserrat";
-      font-size: 30px;
-      font-weight: 400;
-      font-style: normal;
-      color: #fff;
-      margin-bottom: 15px; }
-      @media (max-height: 500px) {
-        header nav#responsive-menu ul #menu-list h6 {
-          font-size: 26px; } }
-    header nav#responsive-menu ul #menu-list h5 {
-      float: right;
-      margin-top: 7px; }
-      header nav#responsive-menu ul #menu-list h5 a {
-        text-decoration: none;
-        color: #fff; }
-        header nav#responsive-menu ul #menu-list h5 a i {
-          font-size: 22px; }
-    header nav#responsive-menu ul #menu-list #mobile-product-categories-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-      float: left;
-      width: 100%;
-      height: 100%;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      header nav#responsive-menu ul #menu-list #mobile-product-categories-header li {
-        position: relative;
+      width: 100%; }
+      header nav#responsive-menu ul #menu-list h6 {
         float: left;
-        width: auto;
-        height: 100%;
-        font-size: 16px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-size: 15px;
+        font-weight: 600;
         font-style: normal;
-        font-weight: 500;
-        padding: 4px 0; }
-        header nav#responsive-menu ul #menu-list #mobile-product-categories-header li .mobile-menu-arrow-down {
-          font-size: 12px;
-          padding-left: 10px;
-          color: #fff; }
-        header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a {
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: 0;
+        border-bottom: 1px solid #000; }
+        header nav#responsive-menu ul #menu-list h6 a {
+          display: flex;
+          align-items: baseline;
+          justify-content: start;
           float: left;
-          height: 100%;
-          color: #fff;
-          text-decoration: none; }
-          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a i {
-            font-size: 26px; }
-        header nav#responsive-menu ul #menu-list #mobile-product-categories-header li.opened-mobile-second-level ul.mobile-second-level {
-          display: block;
-          visibility: visible; }
-        header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul {
+          text-decoration: none;
+          color: #000; }
+          header nav#responsive-menu ul #menu-list h6 a i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 35px;
+            height: 35px;
+            font-size: 22px;
+            color: #fff;
+            background: #000;
+            border-radius: 50%;
+            margin-right: 7px; }
+      header nav#responsive-menu ul #menu-list #mobile-product-categories-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        float: left;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        margin: 20px 0 0 0;
+        padding: 0; }
+        header nav#responsive-menu ul #menu-list #mobile-product-categories-header li {
+          position: relative;
           float: left;
           width: 100%;
-          display: none;
-          visibility: hidden;
-          margin: 0;
-          padding: 0;
-          z-index: 99; }
-          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul li {
+          height: 100%;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          border-bottom: 1px solid #bbb; }
+          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li .mobile-menu-arrow-down {
+            display: flex;
+            align-items: center;
+            width: 22px;
+            height: 54px;
+            font-size: 12px;
+            padding: 15px 0;
+            color: #000; }
+          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a {
+            float: left;
+            width: 94%;
+            height: 100%;
+            color: #000;
+            padding: 15px 0;
+            text-decoration: none; }
+            header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a i {
+              font-size: 26px; }
+          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li.opened-mobile-second-level ul.mobile-second-level {
+            display: block;
+            visibility: visible; }
+          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul {
             float: left;
             width: 100%;
-            font-size: 13px;
-            font-weight: 400;
-            font-style: normal;
-            list-style: none;
-            padding: 5px 0 5px 15px; }
-            header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul li a {
-              color: #fff;
-              text-decoration: none; }
+            display: none;
+            visibility: hidden;
+            margin: 0;
+            padding: 0;
+            z-index: 99; }
+            header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul li {
+              float: left;
+              width: 100%;
+              font-size: 13px;
+              font-weight: 400;
+              font-style: normal;
+              list-style: none;
+              padding: 5px 0 5px 15px; }
+              header nav#responsive-menu ul #menu-list #mobile-product-categories-header li ul li a {
+                color: #000;
+                text-decoration: none; }
 
 #main-search form#searchform {
   position: relative;
