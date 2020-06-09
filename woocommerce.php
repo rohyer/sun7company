@@ -26,4 +26,8 @@ get_header();
 	</section><!-- #primary -->
 
 <?php
+
+get_template_part('elements/e', 'leads');
+
 get_footer();
+?>

@@ -1,13 +1,21 @@
 section {
     &#leads {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         float: left;
         width: 100%;
         height: 120px;
-        background-color: #00eeff;
+        background-color: #1698a1;
         padding-top: 20px;
         padding-bottom: 20px;
 
+        @media (max-width: 991px) {
+            height: 100%;
+        }
+
         #leads-title {
+            height: 100%;
 
             @media (min-width: 992px) {
                 text-align: left;
@@ -29,12 +37,82 @@ section {
 
             h5 {
                 font-family: 'Montserrat';
-                font-size: 30px;
+                font-size: 36px;
                 font-weight: 600;
                 font-style: normal;
                 color: #000;
                 text-transform: uppercase;
                 margin: 0;
+                height: 40px;
+
+                @media (max-width: 991px) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        #leads-form {
+            height: 100%;
+
+            #wpcf7-f1812-o1 {
+                float: left;
+                width: 100%;
+
+                form {
+                    
+                            p {
+                            @media (min-width: 992px) {
+                                height: 0;
+                                margin: 0;
+                            }
+
+                            @media (max-width: 991px) {
+                                float: left;
+                                width: 100%;
+                                height: 50px;
+                                margin: 5px 0;
+                            }
+                        }
+                    
+
+                    input {
+                        font-family: "Roboto";
+                        font-size: 16px;
+                        font-style: normal;
+                        outline: none;
+
+                        @media (max-width: 769px) {
+                            font-size: 14px;
+                        }
+
+                        &.input-contact {
+                            float: left;
+                            width: 39%;
+                            height: 50px;
+                            margin-right: 2%;
+                            border: none;
+                            text-indent: 10px;
+
+                            @media (max-width: 991px) {
+                                width: 100%;
+                            }
+                        }
+
+                        &[type=submit] {
+                            width: 17%;
+                            height: 50px;
+                            border: none;
+                            font-weight: 600;
+                            color: #fff;
+                            text-transform: uppercase;
+                            background-color: #222;
+
+                            @media (max-width: 991px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
