@@ -18,23 +18,16 @@ add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 if ( function_exists('register_sidebar') )
 {
     register_sidebar(array(
-        'name' => __( 'Cores'),
+        'name' => __( 'Filtro'),
         'id' => 'sidebar-1',
-        'description' => __( 'Breve descrição sobre esta SIDEBAR.'),
+        'description' => __( 'Filtro de produtos por preço, tamanho e cor.'),
         'before_title' => '<h1>',
         'after_title' => '</h1>',
     ) );
     register_sidebar(array(
-        'name' => __( 'Label'),
+        'name' => __( 'Filtro Mobile'),
         'id' => 'sidebar-2',
-        'description' => __( 'Breve descrição sobre a SEGUNDA SIDEBAR.'),
-        'before_title' => '<h1>',
-        'after_title' => '</h1>',
-    ) );
-    register_sidebar(array(
-        'name' => __( 'Label'),
-        'id' => 'sidebar-3',
-        'description' => __( 'Breve descrição sobre a SEGUNDA SIDEBAR.'),
+        'description' => __( 'Filtro de produtos por preço, tamanho e cor para tablets e smartphones.'),
         'before_title' => '<h1>',
         'after_title' => '</h1>',
     ) );
@@ -46,6 +39,13 @@ add_action( 'after_setup_theme', 'setup_woocommerce_support' );
  function setup_woocommerce_support()
 {
   add_theme_support('woocommerce');
+}
+
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3;
+	}
 }
 
 

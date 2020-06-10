@@ -17,19 +17,33 @@ get_header();
 			<div class="container">
 
 				<?php
-				if ( is_active_sidebar('sidebar-1') ) {
-					dynamic_sidebar('sidebar-1');
-				}
-				if ( is_active_sidebar('sidebar-2') ) {
-					dynamic_sidebar('sidebar-2');
-				}
-				if ( is_active_sidebar('sidebar-3') ) {
-					dynamic_sidebar('sidebar-3');
-				}
+				if ( is_active_sidebar('sidebar-1') || is_active_sidebar('sidebar-2') ) { ?>
+					<?php if ( !is_product() ) { ?>
+						<div class="row">
+							<div class="d-none d-lg-block col-lg-3">
+								<div id="main-filter">
+									<?php dynamic_sidebar('sidebar-1'); ?>
+								</div>
+							</div>
+							<div class="col-12 d-lg-none">
+								<div id="mobile-filter">
+									<?php dynamic_sidebar('sidebar-2'); ?>
+								</div>
+							</div>
+							<div class="col-12 col-lg-9">
+								<div id="sun-woocommerce-content">
+									<?php woocommerce_content(); ?>
+								</div>
+							</div>
+						</div>
+					<?php } else { ?>
+						<?php woocommerce_content(); ?>
+					<?php } ?>
+				<?php }
 				?>
 				
 
-				<?php woocommerce_content(); ?>
+				
 
 			</div>
 

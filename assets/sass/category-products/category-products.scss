@@ -2,40 +2,110 @@ section {
     &#primary {
         main {
             &#main {
-                ul {
-                    &.products {
-                        li {
-                            &.product {
-                                border: 1px solid #ccc;
+                #main-filter {
+                    margin-top: 6px;
 
-                                a {
+                    li {
+                        &#woocommerce_price_filter-2, &#woocommerce_layered_nav-3, &#woocommerce_layered_nav-2 {
+                            float: left;
+                            width: 100%;
+                            list-style: none;
+                            margin-bottom: 20px;
 
-                                    h2 {
-                                        &.woocommerce-loop-product__title {
-                                            font-size: 16px;
-                                            font-weight: 400;
+                            &#woocommerce_layered_nav-3 {
+                                ul {
+                                    li {
+                                        float: left;
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            
+                            h1 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                font-style: normal;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+                #mobile-filter {
+                    li {
+                        &#woocommerce_price_filter-3, &#woocommerce_layered_nav-4, &#woocommerce_layered_nav-5 {
+                            float: left;
+                            width: 100%;
+                            list-style: none;
+                            margin-bottom: 20px;
+
+                            h1 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                font-style: normal;
+                                color: #000;
+                            }
+                        }
+
+                        &#woocommerce_layered_nav-4 {
+                            li {
+                                &.select2-search {
+                                    input {
+                                        text-indent: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        &#woocommerce_layered_nav-5 {
+                            li {
+                                &.select2-search {
+                                    input {
+                                        text-indent: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                #sun-woocommerce-content {
+                    ul {
+                        &.products {
+                            li {
+                                &.product {
+                                    border: 1px solid #ccc;
+
+                                    a {
+
+                                        h2 {
+                                            &.woocommerce-loop-product__title {
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                color: #000;
+                                                height: 70px;
+                                                padding-left: 15px !important;
+                                                padding-right: 15px !important;
+                                            }
+                                        }
+
+                                        .woocommerce-Price-amount {
+                                            font-size: 22px;
+                                            font-weight: 500;
                                             font-style: normal;
                                             color: #000;
-                                            height: 70px;
-                                            padding-left: 15px !important;
-                                            padding-right: 15px !important;
                                         }
-                                    }
-
-                                    .woocommerce-Price-amount {
-                                        font-size: 22px;
-                                        font-weight: 500;
-                                        font-style: normal;
-                                        color: #000;
-                                    }
-                    
-                                    &.button {
-                                        width: 75%;
-                                        text-align: center;
-                                        background-color: #4caf50;
-                                        color: #fff;
-                                        margin-top: 0px !important;
-                                        margin-bottom: 20px;
+                        
+                                        &.button {
+                                            width: 75%;
+                                            text-align: center;
+                                            background-color: #4caf50;
+                                            color: #fff;
+                                            margin-top: 0px !important;
+                                            margin-bottom: 20px;
+                                        }
                                     }
                                 }
                             }

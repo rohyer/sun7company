@@ -14345,9 +14345,38 @@ section#primary {
   width: 100%;
   padding: 35px 0; }
 
-section#primary main#main ul.products li.product {
+section#primary main#main #main-filter {
+  margin-top: 6px; }
+  section#primary main#main #main-filter li#woocommerce_price_filter-2, section#primary main#main #main-filter li#woocommerce_layered_nav-3, section#primary main#main #main-filter li#woocommerce_layered_nav-2 {
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px; }
+    section#primary main#main #main-filter li#woocommerce_price_filter-2#woocommerce_layered_nav-3 ul li, section#primary main#main #main-filter li#woocommerce_layered_nav-3#woocommerce_layered_nav-3 ul li, section#primary main#main #main-filter li#woocommerce_layered_nav-2#woocommerce_layered_nav-3 ul li {
+      float: left;
+      width: 50%; }
+    section#primary main#main #main-filter li#woocommerce_price_filter-2 h1, section#primary main#main #main-filter li#woocommerce_layered_nav-3 h1, section#primary main#main #main-filter li#woocommerce_layered_nav-2 h1 {
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      color: #000; }
+section#primary main#main #mobile-filter li#woocommerce_price_filter-3, section#primary main#main #mobile-filter li#woocommerce_layered_nav-4, section#primary main#main #mobile-filter li#woocommerce_layered_nav-5 {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 20px; }
+  section#primary main#main #mobile-filter li#woocommerce_price_filter-3 h1, section#primary main#main #mobile-filter li#woocommerce_layered_nav-4 h1, section#primary main#main #mobile-filter li#woocommerce_layered_nav-5 h1 {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000; }
+section#primary main#main #mobile-filter li#woocommerce_layered_nav-4 li.select2-search input {
+  text-indent: 5px; }
+section#primary main#main #mobile-filter li#woocommerce_layered_nav-5 li.select2-search input {
+  text-indent: 10px; }
+section#primary main#main #sun-woocommerce-content ul.products li.product {
   border: 1px solid #ccc; }
-  section#primary main#main ul.products li.product a h2.woocommerce-loop-product__title {
+  section#primary main#main #sun-woocommerce-content ul.products li.product a h2.woocommerce-loop-product__title {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -14355,12 +14384,12 @@ section#primary main#main ul.products li.product {
     height: 70px;
     padding-left: 15px !important;
     padding-right: 15px !important; }
-  section#primary main#main ul.products li.product a .woocommerce-Price-amount {
+  section#primary main#main #sun-woocommerce-content ul.products li.product a .woocommerce-Price-amount {
     font-size: 22px;
     font-weight: 500;
     font-style: normal;
     color: #000; }
-  section#primary main#main ul.products li.product a.button {
+  section#primary main#main #sun-woocommerce-content ul.products li.product a.button {
     width: 75%;
     text-align: center;
     background-color: #4caf50;
