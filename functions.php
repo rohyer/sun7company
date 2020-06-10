@@ -12,6 +12,35 @@ add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 //     add_theme_support( 'woocommerce' );
 // }
 
+
+
+// Registro das suas widgets
+if ( function_exists('register_sidebar') )
+{
+    register_sidebar(array(
+        'name' => __( 'Cores'),
+        'id' => 'sidebar-1',
+        'description' => __( 'Breve descrição sobre esta SIDEBAR.'),
+        'before_title' => '<h1>',
+        'after_title' => '</h1>',
+    ) );
+    register_sidebar(array(
+        'name' => __( 'Label'),
+        'id' => 'sidebar-2',
+        'description' => __( 'Breve descrição sobre a SEGUNDA SIDEBAR.'),
+        'before_title' => '<h1>',
+        'after_title' => '</h1>',
+    ) );
+    register_sidebar(array(
+        'name' => __( 'Label'),
+        'id' => 'sidebar-3',
+        'description' => __( 'Breve descrição sobre a SEGUNDA SIDEBAR.'),
+        'before_title' => '<h1>',
+        'after_title' => '</h1>',
+    ) );
+}
+
+
 add_action( 'after_setup_theme', 'setup_woocommerce_support' );
 
  function setup_woocommerce_support()
@@ -32,6 +61,18 @@ function woo_custom_product_searchform( $form ) {
     </div>
   </form>';
   return $form;
+}
+
+// To change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
+function woocommerce_custom_single_add_to_cart_text() {
+    return __( 'Comprar', 'woocommerce' ); 
+}
+
+// To change add to cart text on product archives(Collection) page
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );  
+function woocommerce_custom_product_add_to_cart_text() {
+    return __( 'Comprar', 'woocommerce' );
 }
 
 

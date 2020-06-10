@@ -24,7 +24,11 @@ $args = array(
                     ?>
                     <li id="post-<?php the_ID(); ?>" class="testimonial-post">
                         <div class="testimonial-excerpt">
-                            <?php the_excerpt(); ?>
+                        <?php
+                            $excerpt = get_the_excerpt();
+                            $excerpt = substr( $excerpt , 0, 80);
+                            echo $excerpt . ' ...';
+                        ?>
                         </div>
 
                         <div class="testimonial-stars">

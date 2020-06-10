@@ -16,6 +16,19 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="container">
 
+				<?php
+				if ( is_active_sidebar('sidebar-1') ) {
+					dynamic_sidebar('sidebar-1');
+				}
+				if ( is_active_sidebar('sidebar-2') ) {
+					dynamic_sidebar('sidebar-2');
+				}
+				if ( is_active_sidebar('sidebar-3') ) {
+					dynamic_sidebar('sidebar-3');
+				}
+				?>
+				
+
 				<?php woocommerce_content(); ?>
 
 			</div>
