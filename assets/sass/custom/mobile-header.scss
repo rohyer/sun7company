@@ -205,19 +205,9 @@ header {
                             border-bottom: 1px solid #bbb;
                             //padding: 4px 0;
         
-                            .mobile-menu-arrow-down {
-                                display: flex;
-                                align-items: center;
-                                width: 22px;
-                                height: 54px;                
-                                font-size: 12px;
-                                padding: 15px 0;
-                                color: #000;
-                            }
-        
                             a {
                                 float: left;
-                                width: 94%;
+                                width: 90%;
                                 height: 100%;
                                 color: #000;
                                 padding: 15px 0;
@@ -226,6 +216,18 @@ header {
                                 i {
                                     font-size: 26px;
                                 }
+                            }
+
+                            .mobile-menu-arrow-down {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                float: right;
+                                width: 22px;
+                                height: 54px;                
+                                font-size: 12px;
+                                padding: 15px 0;
+                                color: #000;
                             }
         
                             &.opened-mobile-second-level {

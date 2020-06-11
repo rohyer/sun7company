@@ -156,6 +156,12 @@ section {
                                                 height: 70px;
                                                 padding-left: 15px !important;
                                                 padding-right: 15px !important;
+
+                                                @media (max-width: 576px) {
+                                                    font-size: 13px;
+                                                    padding-left: 10px !important;
+                                                    padding-right: 10px !important;
+                                                }
                                             }
                                         }
 
@@ -164,6 +170,10 @@ section {
                                             font-weight: 500;
                                             font-style: normal;
                                             color: #000;
+
+                                            @media (max-width: 576px) {
+                                                font-size: 16px;
+                                            }
                                         }
                         
                                         &.button {
@@ -173,6 +183,11 @@ section {
                                             color: #fff;
                                             margin-top: 0px !important;
                                             margin-bottom: 20px;
+
+                                            @media (max-width: 576px) {
+                                                font-size: 14px;
+                                                width: 80%
+                                            }
                                         }
                                     }
                                 }

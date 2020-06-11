@@ -13847,23 +13847,25 @@ header nav#responsive-menu {
           font-style: normal;
           font-weight: 500;
           border-bottom: 1px solid #bbb; }
-          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li .mobile-menu-arrow-down {
-            display: flex;
-            align-items: center;
-            width: 22px;
-            height: 54px;
-            font-size: 12px;
-            padding: 15px 0;
-            color: #000; }
           header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a {
             float: left;
-            width: 94%;
+            width: 90%;
             height: 100%;
             color: #000;
             padding: 15px 0;
             text-decoration: none; }
             header nav#responsive-menu ul #menu-list #mobile-product-categories-header li a i {
               font-size: 26px; }
+          header nav#responsive-menu ul #menu-list #mobile-product-categories-header li .mobile-menu-arrow-down {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            width: 22px;
+            height: 54px;
+            font-size: 12px;
+            padding: 15px 0;
+            color: #000; }
           header nav#responsive-menu ul #menu-list #mobile-product-categories-header li.opened-mobile-second-level ul.mobile-second-level {
             display: block;
             visibility: visible; }
@@ -14432,11 +14434,19 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     height: 70px;
     padding-left: 15px !important;
     padding-right: 15px !important; }
+    @media (max-width: 576px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a h2.woocommerce-loop-product__title {
+        font-size: 13px;
+        padding-left: 10px !important;
+        padding-right: 10px !important; } }
   section#primary main#main #sun-woocommerce-content ul.products li.product a .woocommerce-Price-amount {
     font-size: 22px;
     font-weight: 500;
     font-style: normal;
     color: #000; }
+    @media (max-width: 576px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .woocommerce-Price-amount {
+        font-size: 16px; } }
   section#primary main#main #sun-woocommerce-content ul.products li.product a.button {
     width: 75%;
     text-align: center;
@@ -14444,5 +14454,9 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     color: #fff;
     margin-top: 0px !important;
     margin-bottom: 20px; }
+    @media (max-width: 576px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a.button {
+        font-size: 14px;
+        width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
