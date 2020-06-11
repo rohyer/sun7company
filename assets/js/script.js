@@ -135,6 +135,28 @@ function openCloseSecondLevelMenu() {
 }
 openCloseSecondLevelMenu();
 
+// FUNÇÃO PARA ABRIR E FECHAR FILTRO MOBILE
+function openCloseFilter() {
+	const showFilter = doc.getElementById('show-filter');
+	showFilter.addEventListener('click', function(e) {
+		const mobileFilter = doc.getElementById('mobile-filter');
+		const arrowFilter = doc.getElementById('arrow-filter');
+
+		if (mobileFilter.className == 'closed-filter') {
+			mobileFilter.classList.remove('close-filter');
+			arrowFilter.classList.remove('fa-chevron-down');
+			mobileFilter.classList.add('opened-filter');
+			arrowFilter.classList.add('fa-chevron-up');
+		} else {
+			mobileFilter.classList.remove('opened-filter');
+			arrowFilter.classList.remove('fa-chevron-up');
+			mobileFilter.classList.add('closed-filter');
+			arrowFilter.classList.add('fa-chevron-down');
+		}
+	});
+}
+openCloseFilter();
+
 
 // $('#tshirts ul').owlCarousel({
 // 	loop: false,

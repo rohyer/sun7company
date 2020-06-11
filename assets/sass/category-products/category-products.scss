@@ -2,7 +2,30 @@ section {
     &#primary {
         main {
             &#main {
+                button {
+                    &#show-filter {
+                        cursor: pointer;
+                        width: 100%;
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: normal;
+                        color: #515151;
+                        border: 1px solid transparent;
+                        border-radius: 3px;
+                        background-color: #ebe9eb;
+                        margin-bottom: 15px;
+                        outline: 0;
+
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
                 #main-filter {
+                    float: left;
+                    width: 100%;
                     margin-top: 6px;
 
                     li {
@@ -32,6 +55,18 @@ section {
                 }
 
                 #mobile-filter {
+                    float: left;
+                    width: 100%;
+
+                    &.closed-filter {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    &.opened-filter {
+                        display: block;
+                        visibility: visible;
+                    }
+
                     li {
                         &#woocommerce_price_filter-3, &#woocommerce_layered_nav-4, &#woocommerce_layered_nav-5 {
                             float: left;
@@ -44,6 +79,27 @@ section {
                                 font-weight: 500;
                                 font-style: normal;
                                 color: #000;
+                            }
+                        }
+
+                        &#woocommerce_layered_nav-4, &#woocommerce_layered_nav-5 {
+                            form {
+                                button {
+                                    &[type=submit] {
+                                        cursor: pointer;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        font-style: normal;
+                                        height: 36px;
+                                        color: #515151;
+                                        border: 1px solid transparent;
+                                        border-radius: 3px;
+                                        background-color: #ebe9eb;
+                                        padding-left: 15px;
+                                        padding-right: 15px;
+                                        outline: 0;
+                                    }
+                                }
                             }
                         }
 
@@ -71,6 +127,18 @@ section {
                 }
 
                 #sun-woocommerce-content {
+                    h1 {
+                        @media (min-width: 992px) {
+                            font-size: 34px;
+                        }
+                        @media (max-width: 991px) and (min-width: 579px) {
+                            font-size: 20px;
+                        }
+                        @media (max-width: 578px) {
+                            font-size: 18px;
+                        }
+                    }
+
                     ul {
                         &.products {
                             li {

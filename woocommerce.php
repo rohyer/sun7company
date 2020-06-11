@@ -26,7 +26,8 @@ get_header();
 								</div>
 							</div>
 							<div class="col-12 d-lg-none">
-								<div id="mobile-filter">
+								<button id="show-filter">Filtro <i id="arrow-filter" class="fas fa-chevron-down"></i></button>
+								<div id="mobile-filter" class="closed-filter">
 									<?php dynamic_sidebar('sidebar-2'); ?>
 								</div>
 							</div>
