@@ -114,24 +114,7 @@ function bbloomer_separate_registration_form() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// FUNÇÃO PARA SUPORTAR WOOCOMMERCE
 add_action( 'after_setup_theme', 'setup_woocommerce_support' );
 
  function setup_woocommerce_support()
@@ -139,6 +122,7 @@ add_action( 'after_setup_theme', 'setup_woocommerce_support' );
   add_theme_support('woocommerce');
 }
 
+// FUNÇÃO PARA ADICIONAR 3 COLUNAS NAS PÁGINAS DE CATEGORIA E PESQUISA
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
@@ -147,6 +131,7 @@ if (!function_exists('loop_columns')) {
 }
 
 
+// FUNÇÃO DE PESQUISA
 add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
 
 function woo_custom_product_searchform( $form ) {
@@ -161,6 +146,7 @@ function woo_custom_product_searchform( $form ) {
   return $form;
 }
 
+// FUNÇÃO PARA MUDAR O NOME DO BOTÃO COMPRAR
 // To change add to cart text on single product page
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
 function woocommerce_custom_single_add_to_cart_text() {
@@ -172,6 +158,15 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_
 function woocommerce_custom_product_add_to_cart_text() {
     return __( 'Comprar', 'woocommerce' );
 }
+
+
+function verifica_acessos() {
+   if ( ! is_user_logged_in() AND is_checkout() ) {
+      // Executa se o usuário não está logado, se não nem a página inicial nem na de login nem na de registro
+       wp_redirect( home_url( '/minha-conta' ) );
+   }
+}
+add_action( 'wp', 'verifica_acessos' );
 
 
 
