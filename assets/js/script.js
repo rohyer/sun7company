@@ -73,7 +73,7 @@ $('#testimonials ul').owlCarousel({
 });
 
 const doc = document;
-
+const body = doc.getElementsByTagName('body')[0];
 
 // FUNÇÃO PARA ABRIR MENU RESPONSIVO
 
@@ -155,7 +155,23 @@ function openCloseFilter() {
 		}
 	});
 }
-openCloseFilter();
+if (body.classList[1] == 'tax-product_cat' || body.classList[2] == 'search-results') {
+	openCloseFilter();
+}
+
+function resizeCheckout() {
+	const customerDetails1 = doc.querySelector('#customer_details .col-1');
+	const customerDetails2 = doc.querySelector('#customer_details .col-2');
+	customerDetails1.classList.remove('col-1');
+	customerDetails2.classList.remove('col-2');
+	customerDetails1.classList.add('col-12');
+	customerDetails2.classList.add('col-12');
+}
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'woocommerce-checkout') {
+		resizeCheckout();
+	}
+}
 
 
 // $('#tshirts ul').owlCarousel({

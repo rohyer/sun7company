@@ -14535,5 +14535,7 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
   float: left;
   width: 100%;
   margin: 40px 0; }
+  #page-checkout .main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .checkout-data-user, #page-checkout .main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .checkout-more-data {
+    float: left; }
 
 /*# sourceMappingURL=style.css.map */
