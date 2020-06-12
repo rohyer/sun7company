@@ -3,14 +3,20 @@
     width: 100%;
     margin: 40px 0;
 
-    .main-content-checkout {
+    #main-content-checkout {
         .woocommerce {
             form {
                 &.checkout {
                     &.woocommerce-checkout {
                         #customer_details {
-                            .checkout-data-user, .checkout-more-data {
-                                float: left;
+                            .woocommerce-billing-fields {
+                                .woocommerce-billing-fields__field-wrapper {
+                                    p {
+                                        &#billing_first_name_field, &#billing_last_name_field {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
                             } 
                         }
                     }

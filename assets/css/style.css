@@ -14535,7 +14535,7 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
   float: left;
   width: 100%;
   margin: 40px 0; }
-  #page-checkout .main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .checkout-data-user, #page-checkout .main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .checkout-more-data {
-    float: left; }
+  #page-checkout #main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#billing_first_name_field, #page-checkout #main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#billing_last_name_field {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
