@@ -1,0 +1,144 @@
+#page-cart {
+    float: left;
+    width: 100%;
+    margin: 40px 0;
+
+    #main-content-cart {
+        form {
+            &.woocommerce-cart-form {
+                table {
+                    &.shop_table {
+                        thead {
+                            background-color: #000;
+                            
+                            tr {
+                                th {
+                                    font-family: "Roboto";
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                    text-transform: uppercase;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                &.woocommerce-cart-form__cart-item {
+                                    &.cart_item {
+                                        td {
+                                            &.product-remove {
+                                                a {
+                                                    margin: auto;
+                                                }
+                                            }
+                                            &.product-thumbnail {
+                                                text-align: center;
+
+                                                img {
+                                                    width: 90px;
+                                                }
+                                            }
+                                            &.product-name {
+                                                a {
+                                                    font-family: "Roboto";
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    font-style: normal;
+                                                    color: #444;
+                                                }
+                                            }
+                                            &.product-quantity {
+                                                .quantity {
+                                                    input {
+                                                        &.qty {
+                                                            width: 45px;
+                                                            border: 1px solid #bbb;
+                                                            border-radius: 2px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.product-subtotal {
+                                                span {
+                                                    &.woocommerce-Price-amount {
+                                                        &.amount {
+                                                            font-family: "Roboto";
+                                                            font-size: 16px;
+                                                            font-weight: 600;
+                                                            font-style: normal;
+                                                            color: #444;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .coupon {
+                                    input {
+                                        &#coupon_code {
+                                            width: 175px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart-collaterals {
+            margin-top: 45px;
+
+            .cart_totals {
+                @media (max-width: 991px) and (min-width: 769px) {
+                    width: 100%;
+                }
+
+                table {
+                    &.shop_table_responsive {
+                        tbody {
+                            tr {
+                                &.cart-subtotal, &.order-total {
+                                    td {
+                                        @media (max-width: 991px) and (min-width: 769px) {
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                h2 {
+                    font-family: "Montserrat";
+                    font-size: 24px;
+                    font-weight: 600;
+                    font-style: normal;
+                }
+
+                .wc-proceed-to-checkout {
+                    a {
+                        font-family: "Montserrat";
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-style: normal;
+                        color: #fff;
+                        background-color: #dd9933;
+                    }
+
+                    .wcppec-checkout-buttons {
+                        &.woo_pp_cart_buttons_div {
+                            display: none;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
