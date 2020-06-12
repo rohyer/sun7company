@@ -173,6 +173,20 @@ for (let i = 0; i < body.classList.length; i++) {
 	}
 }
 
+function resizeAccount() {
+	const customerAccount1 = doc.querySelector('#customer_login .col-1');
+	const customerAccount2 = doc.querySelector('#customer_login .col-2');
+	customerAccount1.classList.remove('col-1');
+	customerAccount2.classList.remove('col-2');
+	customerAccount1.classList.add('col-6');
+	customerAccount2.classList.add('col-6');
+}
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'woocommerce-account') {
+		resizeAccount();
+	}
+}
+
 
 // $('#tshirts ul').owlCarousel({
 // 	loop: false,

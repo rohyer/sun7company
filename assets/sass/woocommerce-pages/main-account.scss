@@ -1,0 +1,50 @@
+#page-account {
+    float: left;
+    width: 100%;
+    margin: 40px 0;
+
+    #main-content-account {
+        .woocommerce {
+            #customer_login {
+                div {
+                    &.u-column1, &.u-column2 {
+                        float: left;
+                    }
+
+                    &.u-column1 {
+                        form {
+                            &.woocommerce-form-login {
+                                &.login {
+                                    p {
+                                        label {
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                        }
+
+                                        span {
+                                            &.password-input {
+                                                float: left;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        input {
+                                            &.woocommerce-Input {
+                                                border: 1px solid #bbb;
+                                                border-radius: 2px;
+                                                height: 40px;
+                                                text-indent: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
