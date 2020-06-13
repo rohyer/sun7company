@@ -163,7 +163,7 @@ function woocommerce_custom_product_add_to_cart_text() {
 function verifica_acessos() {
    if ( ! is_user_logged_in() AND is_checkout() ) {
       // Executa se o usuário não está logado, se não nem a página inicial nem na de login nem na de registro
-       wp_redirect( home_url( '/minha-conta' ) );
+       wp_redirect( home_url( '/cadastro' ) );
    }
 }
 add_action( 'wp', 'verifica_acessos' );

@@ -182,7 +182,7 @@ function resizeAccount() {
 	customerAccount2.classList.add('col-6');
 }
 for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'woocommerce-account') {
+	if (body.classList[i] == 'woocommerce-account' || body.classList[i] == 'page-id-1820') {
 		resizeAccount();
 	}
 }

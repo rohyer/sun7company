@@ -13968,7 +13968,6 @@ header nav#responsive-menu {
   #bottom-header {
     display: flex;
     align-items: center;
-    float: left;
     width: 100%;
     height: 45px;
     background-color: #000; }
@@ -14557,5 +14556,65 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
   margin: 40px 0; }
   #page-checkout #main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#billing_first_name_field, #page-checkout #main-content-checkout .woocommerce form.checkout.woocommerce-checkout #customer_details .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#billing_last_name_field {
     width: 100%; }
+
+body.page.page-id-1820 {
+  position: relative; }
+  body.page.page-id-1820 #page-register {
+    width: 55%;
+    margin: 60px auto; }
+    body.page.page-id-1820 #page-register .black-mask {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 11, 24, 0.6); }
+    body.page.page-id-1820 #page-register #main-box-register {
+      float: left;
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #777; }
+      body.page.page-id-1820 #page-register #main-box-register .title-box-register {
+        font-family: "Montserrat";
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        border-bottom: 1px solid #bbb;
+        padding: 15px 40px; }
+      body.page.page-id-1820 #page-register #main-box-register .content-box-register {
+        padding: 15px 22px; }
+        body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 {
+          float: left; }
+          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 h2 {
+            display: none;
+            visibility: hidden; }
+          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p {
+            margin-bottom: 0; }
+            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p label {
+              font-family: "Roboto";
+              font-size: 14px;
+              font-weight: 700;
+              font-style: normal;
+              margin-bottom: 0;
+              color: #fff; }
+            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p input.woocommerce-Input {
+              width: 100%;
+              height: 35px;
+              text-indent: 10px;
+              border: none;
+              border-radius: 4px; }
+            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p span.password-input {
+              float: left;
+              width: 100%; }
+          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 .woocommerce-form-login {
+            border: none;
+            padding: 0;
+            margin: 0; }
+        body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column2 {
+          display: none;
+          visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */
