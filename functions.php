@@ -163,10 +163,19 @@ function woocommerce_custom_product_add_to_cart_text() {
 function verifica_acessos() {
    if ( ! is_user_logged_in() AND is_checkout() ) {
       // Executa se o usuário não está logado, se não nem a página inicial nem na de login nem na de registro
-       wp_redirect( home_url( '/cadastro' ) );
+       wp_redirect( home_url( '/login-cadastro' ) );
    }
 }
 add_action( 'wp', 'verifica_acessos' );
+
+function verifica_acessos_cadastro() {
+   $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+   if ( is_user_logged_in() AND $current_link == "http://localhost/sun7company/login-cadastro/" ) {
+      wp_redirect( home_url( '/minha-conta' ) );
+   }
+
+}
+add_action( 'wp', 'verifica_acessos_cadastro' );
 
 
 
@@ -204,6 +213,7 @@ function g_scripts() {
 
     wp_enqueue_script('jquery-3.4.1', get_template_directory_uri() . '/assets/js/jquery-3.4.1.js');
     wp_enqueue_script('index', get_template_directory_uri() . '/assets/js/bootstrap/index.js');
+    //wp_enqueue_script('modal', get_template_directory_uri() . '/assets/js/bootstrap/modal.js');
     wp_enqueue_script('owl.carousel', get_template_directory_uri() . '/assets/js/owl/owl.carousel.js');
     wp_enqueue_script('owl.autoplay', get_template_directory_uri() . '/assets/js/owl/owl.autoplay.js', array(), '1.0', true);
     wp_enqueue_script('owl.navigation', get_template_directory_uri() . '/assets/js/owl/owl.navigation.js', array(), '1.0', true);

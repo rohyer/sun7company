@@ -14559,10 +14559,10 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
 
 body.page.page-id-1820 {
   position: relative; }
-  body.page.page-id-1820 #page-register {
+  body.page.page-id-1820 #page-login-register {
     width: 55%;
     margin: 60px auto; }
-    body.page.page-id-1820 #page-register .black-mask {
+    body.page.page-id-1820 #page-login-register .black-mask {
       content: '';
       position: absolute;
       top: 0;
@@ -14570,51 +14570,116 @@ body.page.page-id-1820 {
       width: 100%;
       height: 100%;
       background: rgba(0, 11, 24, 0.6); }
-    body.page.page-id-1820 #page-register #main-box-register {
+    body.page.page-id-1820 #page-login-register #main-box-register {
       float: left;
       width: 100%;
       height: auto;
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0px 0px 10px #777; }
-      body.page.page-id-1820 #page-register #main-box-register .title-box-register {
-        font-family: "Montserrat";
-        font-size: 25px;
-        font-weight: 400;
-        font-style: normal;
+      body.page.page-id-1820 #page-login-register #main-box-register .title-box-register {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        float: left;
+        width: 100%;
         border-bottom: 1px solid #bbb;
         padding: 15px 40px; }
-      body.page.page-id-1820 #page-register #main-box-register .content-box-register {
+        body.page.page-id-1820 #page-login-register #main-box-register .title-box-register h5 {
+          float: left;
+          font-family: "Montserrat";
+          font-size: 25px;
+          font-weight: 400;
+          font-style: normal;
+          margin: 0; }
+        body.page.page-id-1820 #page-login-register #main-box-register .title-box-register i {
+          float: right; }
+      body.page.page-id-1820 #page-login-register #main-box-register .content-box-register {
+        float: left;
+        width: 100%;
         padding: 15px 22px; }
-        body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 {
-          float: left; }
-          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 h2 {
+        body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce {
+          float: left;
+          padding-right: 25px; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 {
+            float: left;
+            padding: 0; }
+            body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 h2 {
+              display: none;
+              visibility: hidden; }
+            body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p {
+              margin-bottom: 0; }
+              body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p label {
+                font-family: "Roboto";
+                font-size: 14px;
+                font-weight: 700;
+                font-style: normal;
+                margin-bottom: 0; }
+              body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p input.woocommerce-Input {
+                width: 100%;
+                height: 35px;
+                text-indent: 10px;
+                border: none;
+                border-radius: 4px; }
+              body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p span.password-input {
+                float: left;
+                width: 100%; }
+              body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p.form-row {
+                display: block; }
+                body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p.form-row button[type=submit] {
+                  float: right;
+                  color: #fff;
+                  background-color: #dd9933;
+                  margin: 4px 0 0 0;
+                  outline: none; }
+            body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 .woocommerce-form-login {
+              border: none;
+              padding: 0;
+              margin: 0; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register .woocommerce #customer_login .u-column2 {
             display: none;
             visibility: hidden; }
-          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p {
-            margin-bottom: 0; }
-            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p label {
-              font-family: "Roboto";
-              font-size: 14px;
-              font-weight: 700;
-              font-style: normal;
-              margin-bottom: 0;
-              color: #fff; }
-            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p input.woocommerce-Input {
-              width: 100%;
-              height: 35px;
-              text-indent: 10px;
-              border: none;
-              border-radius: 4px; }
-            body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 form p span.password-input {
-              float: left;
-              width: 100%; }
-          body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column1 .woocommerce-form-login {
-            border: none;
-            padding: 0;
-            margin: 0; }
-        body.page.page-id-1820 #page-register #main-box-register .content-box-register .woocommerce #customer_login .u-column2 {
-          display: none;
-          visibility: hidden; }
+        body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register {
+          float: left;
+          border: 2px dashed #ccc;
+          margin-top: 10px;
+          padding: 22px 25px 30px 25px; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register h6 {
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 100%;
+            height: 45px;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            color: #fff;
+            background-color: #dd9933;
+            margin-bottom: 10px; }
+            body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register a:hover {
+              text-transform: hover; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register #text-register i {
+            float: left;
+            width: 25px;
+            color: #bbb;
+            font-size: 16px;
+            margin-top: 3px; }
+          body.page.page-id-1820 #page-login-register #main-box-register .content-box-register #first-register #text-register span {
+            float: left;
+            width: 91%;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 700;
+            font-style: normal;
+            color: #5f5f5f; }
 
 /*# sourceMappingURL=style.css.map */
