@@ -174,33 +174,85 @@ for (let i = 0; i < body.classList.length; i++) {
 }
 
 function resizeLoginRegister() {
-	const woocommerce = doc.querySelector('.content-box-register .woocommerce');
-	const customerAccount1 = doc.querySelector('#customer_login .col-1');
-	const customerAccount2 = doc.querySelector('#customer_login .col-2');
-	customerAccount1.classList.remove('col-1');
-	customerAccount1.classList.add('col-12');
-	customerAccount2.classList.remove('col-2');
-	woocommerce.classList.add("col-6")
-}
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'page-id-1820') {
-		resizeLoginRegister();
-	}
-}
+	for (let i = 0; i < body.classList.length; i++) {
+		if (body.classList[i] == 'woocommerce-account') {
+			const customerAccount1 = doc.querySelector('#customer_login .col-1');
+			const customerAccount2 = doc.querySelector('#customer_login .col-2');
+			customerAccount1.classList.remove('col-1');
+			customerAccount1.classList.add('col-6');
+			customerAccount2.classList.remove('col-2');
+			customerAccount2.classList.add('col-6');
+		} else if (body.classList[i] == 'page-id-1820') {
+			const uColumn2 = doc.querySelector('#content-box-register .woocommerce .u-column2');
+			const uColumn2H2 = doc.querySelector('#content-box-register .woocommerce .u-column2 h2');
+			const uColumn2Form = doc.querySelector('#content-box-register .woocommerce .u-column2 form');
+			
+			uColumn2.removeChild(uColumn2H2);
+			uColumn2.removeChild(uColumn2Form);
 
-function resizeAccount() {
-	const customerAccount1 = doc.querySelector('#customer_login .col-1');
-	const customerAccount2 = doc.querySelector('#customer_login .col-2');
-	customerAccount1.classList.remove('col-1');
-	customerAccount1.classList.add('col-6');
-	customerAccount2.classList.remove('col-2');
-	customerAccount2.classList.add('col-6');
+			const woocommerce = doc.querySelector('#content-box-register .woocommerce');
+			const customerAccount1 = doc.querySelector('#customer_login .u-column1');
+			const customerAccount2 = doc.querySelector('#customer_login .u-column2');
+			customerAccount1.classList.remove('col-1');
+			customerAccount1.classList.add('col-12');
+			customerAccount1.classList.add('col-lg-6');
+
+			customerAccount2.classList.remove('col-2');
+			customerAccount2.classList.add('col-12');
+			customerAccount2.classList.add('col-lg-6');
+			woocommerce.classList.add("col-12");
+
+			// CRIAÇÃO DA DIV FRIST REGISTER
+			const firstRegister = doc.createElement('div');
+			firstRegister.id = "first-register";
+
+			const firstRegisterH6 = doc.createElement('h6');
+			firstRegisterH6.innerHTML = 'Primeira compra';
+
+			const firstRegisterA = doc.createElement('a');
+			firstRegisterA.setAttribute("data-toggle", "modal");
+			firstRegisterA.setAttribute("data-target", "#registerModal");
+			firstRegisterA.innerHTML = "Cadastre-se"
+
+			const firstRegisterText = doc.createElement('div');
+			firstRegisterText.id = "text-register";
+
+			const firstRegisterI = doc.createElement('i');
+			firstRegisterI.classList.add('fas');
+			firstRegisterI.classList.add('fa-shopping-cart');
+
+			const firstRegisterSpan = doc.createElement('span');
+			firstRegisterSpan.innerHTML = "Cadastre seu endereço para facilitar nas suas próximas compras";
+
+			customerAccount2.appendChild(firstRegister);
+			firstRegisterText.appendChild(firstRegisterI);
+			firstRegisterText.appendChild(firstRegisterSpan);
+			firstRegister.appendChild(firstRegisterH6);
+			firstRegister.appendChild(firstRegisterA);
+			firstRegister.appendChild(firstRegisterText);
+
+			
+			// ALTERAÇÕES NO MODAL
+			const uColumn1 = doc.querySelector('#registerModal .woocommerce .u-column1');
+			const uColumn1H2 = doc.querySelector('#registerModal .woocommerce .u-column1 h2');
+			const uColumn1Form = doc.querySelector('#registerModal .woocommerce .u-column1 form');
+			
+			uColumn1.removeChild(uColumn1H2);
+			uColumn1.removeChild(uColumn1Form);
+
+
+			const customerAccountModal1 = doc.querySelector('#registerModal #customer_login .u-column1');
+			const customerAccountModal2 = doc.querySelector('#registerModal #customer_login .u-column2');
+			customerAccountModal1.classList.remove('col-1');
+			customerAccountModal2.classList.remove('col-2');
+			customerAccountModal2.classList.add('col-12');
+
+			const privacyPolicy = doc.querySelector('#registerModal .woocommerce-privacy-policy-text').innerHTML = "";
+		}
+	}	
 }
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'woocommerce-account') {
-		resizeAccount();
-	}
-}
+resizeLoginRegister();
+
 
 
 // $('#tshirts ul').owlCarousel({

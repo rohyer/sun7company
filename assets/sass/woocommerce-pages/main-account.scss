@@ -43,6 +43,39 @@
                             }
                         }
                     }
+                    
+                    &.u-column2 {
+                        form {
+                            &.woocommerce-form-register {
+                                &.register {
+                                    p {
+                                        label {
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                        }
+
+                                        span {
+                                            &.password-input {
+                                                float: left;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        input {
+                                            &.woocommerce-Input {
+                                                border: 1px solid #bbb;
+                                                border-radius: 2px;
+                                                height: 40px;
+                                                text-indent: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

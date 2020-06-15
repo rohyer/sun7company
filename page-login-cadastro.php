@@ -12,14 +12,14 @@
                             <i class="fas fa-times"></i>
                         </a>
                     </div>
-                    <div class="content-box-register">
+                    <div id="content-box-register">
                         <?php echo do_shortcode('[woocommerce_my_account]'); ?>
 
-                        <div id="first-register" class="col-6">
+                        <!-- <div id="first-register" class="col-6">
                             <h6>Primeira compra?</h6>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
                                 Cadastre-se
-                            </button>
+                            </a>
 
                             <div id="text-register">
                                 <i class="fas fa-shopping-cart"></i>
@@ -27,7 +27,7 @@
                             </div>
 
                             
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
