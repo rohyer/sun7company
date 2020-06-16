@@ -7100,6 +7100,11 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
   font-weight: 700;
   font-style: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+  font-weight: 900;
+  font-style: normal; }
 /*!
  * Font Awesome Free 5.8.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -14468,6 +14473,38 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       section#primary main#main #sun-woocommerce-content ul.products li.product a.button {
         font-size: 14px;
         width: 80%; } }
+
+#page-single-product {
+  margin-top: 30px; }
+  #page-single-product .product .images {
+    width: 60%; }
+  #page-single-product .product .summary {
+    width: 38%; }
+    #page-single-product .product .summary h1.product_title {
+      font-family: "Roboto";
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal; }
+    #page-single-product .product .summary p.price {
+      font-family: "Roboto";
+      font-size: 22px;
+      font-weight: 900;
+      font-style: normal;
+      color: #000; }
+    #page-single-product .product .summary form.variations_form table.variations tbody tr td {
+      float: left;
+      width: 125px; }
+  #page-single-product .product .flex-viewport {
+    float: right;
+    width: 86%; }
+  #page-single-product .product ol.flex-control-nav.flex-control-thumbs {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 12%; }
+    #page-single-product .product ol.flex-control-nav.flex-control-thumbs li {
+      width: 100%;
+      margin-bottom: 10px; }
 
 #page-account {
   float: left;

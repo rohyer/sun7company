@@ -37,6 +37,10 @@ get_header();
 								</div>
 							</div>
 						</div>
+					<?php } elseif ( is_product() ) { ?>
+						<div id="page-single-product">
+							<?php woocommerce_content(); ?>
+						</div>
 					<?php } else { ?>
 						<?php woocommerce_content(); ?>
 					<?php } ?>
