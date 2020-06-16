@@ -37,6 +37,46 @@ if ( function_exists('register_sidebar') )
 
 
 
+
+
+add_action( 'wp_enqueue_scripts', 'wc_remove_lightboxes', 99 );
+
+  /**
+   * Remove WooCommerce default prettyphoto lightbox
+  */
+
+   function wc_remove_lightboxes() {    
+     // Styles
+     wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
+     // Scripts
+     wp_dequeue_script( 'prettyPhoto' );
+     wp_dequeue_script( 'prettyPhoto-init' );
+     wp_dequeue_script( 'fancybox' );
+     wp_dequeue_script( 'enable-lightbox' );
+  }
+
+
+/* Customize Product Gallery */
+
+/**
+ * Click on thumbnail to view image for single product page gallery. Includes 
+ * responsive image support using 'srcset' attribute introduced in WP 4.4
+ * @link https://make.wordpress.org/core/2015/11/10/responsive-images-in-wordpress-4-4/
+ */
+
+
+function wc_remove_image_effect_support() {
+
+   add_theme_support( 'wc-product-gallery-zoom' );
+   //add_theme_support( 'wc-product-gallery-lightbox' );
+   add_theme_support( 'wc-product-gallery-slider' );
+
+}
+add_action( 'after_setup_theme', 'wc_remove_image_effect_support', 100 );
+
+
+
+
 // LOGIN SEPARADO
 add_shortcode( 'wc_login_form_bbloomer', 'bbloomer_separate_login_form' );
   
