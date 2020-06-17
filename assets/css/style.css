@@ -14106,6 +14106,7 @@ section.main-contents {
     text-transform: uppercase; }
 
 .products-home-carousel li.product {
+  position: relative;
   text-align: center;
   border: 1px solid #ccc;
   margin-right: 8px !important;
@@ -14114,6 +14115,33 @@ section.main-contents {
   padding-left: 0 !important; }
   .products-home-carousel li.product a:focus {
     outline: none; }
+  .products-home-carousel li.product a .star-rating {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto; }
+    @media (min-width: 1200px) {
+      .products-home-carousel li.product a .star-rating {
+        top: 270px; } }
+    @media (max-width: 1199px) and (min-width: 1023px) {
+      .products-home-carousel li.product a .star-rating {
+        top: 224px; } }
+    @media (max-width: 1022px) and (min-width: 992px) {
+      .products-home-carousel li.product a .star-rating {
+        top: 302px; } }
+    @media (max-width: 991px) and (min-width: 769px) {
+      .products-home-carousel li.product a .star-rating {
+        top: 224px; } }
+    @media (max-width: 768px) and (min-width: 577px) {
+      .products-home-carousel li.product a .star-rating {
+        top: 248px; } }
+    @media (max-width: 576px) {
+      .products-home-carousel li.product a .star-rating {
+        top: -8px;
+        right: 10px;
+        left: initial; } }
+    .products-home-carousel li.product a .star-rating span {
+      color: #ffd700; }
   .products-home-carousel li.product a.button {
     width: 75%;
     text-align: center;
@@ -14128,7 +14156,8 @@ section.main-contents {
     color: #000;
     height: 70px;
     padding-left: 15px !important;
-    padding-right: 15px !important; }
+    padding-right: 15px !important;
+    margin-top: 7px !important; }
     .products-home-carousel li.product h2.woocommerce-loop-product__title:focus {
       outline: none; }
   .products-home-carousel li.product .woocommerce-Price-amount {
@@ -14571,11 +14600,21 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       height: 70px;
       padding-left: 15px;
       padding-right: 15px; }
+      @media (max-width: 991px) {
+        #page-single-product .product section.related.products ul.products li a h2 {
+          font-size: 14px; } }
     #page-single-product .product section.related.products ul.products li a span.price {
       font-size: 22px;
       font-weight: 500;
       font-style: normal;
       color: #000; }
+    #page-single-product .product section.related.products ul.products li a.button {
+      width: 75%;
+      text-align: center;
+      background-color: #4caf50;
+      color: #fff;
+      margin-top: 0px !important;
+      margin-bottom: 20px; }
 
 #page-account {
   float: left;

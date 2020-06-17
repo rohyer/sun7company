@@ -83,7 +83,7 @@ $('.related ul').owlCarousel({
 	responsiveClass: true,
 	responsive:{
 		0:{
-			items: 2
+			items: 1
 		},
 		769:{
 			items: 2
@@ -91,7 +91,7 @@ $('.related ul').owlCarousel({
 		992:{
 			items: 3
 		},
-		1000:{
+		1199:{
 			items: 4
 		}
 	}
