@@ -38,6 +38,14 @@
                 }
             }
 
+            .woocommerce-product-rating {
+                .star-rating {
+                    span {
+                        color: #ffd700;
+                    }
+                }
+            }
+
             p {
                 &.price {
                     font-family: "Roboto";
@@ -216,6 +224,7 @@
                                         height: 70px;
                                         padding-left: 15px;
                                         padding-right: 15px;
+                                        margin-top: 7px !important;
 
                                         @media (max-width: 991px) {
                                             font-size: 14px;
@@ -225,7 +234,7 @@
                                     span {
                                         &.price {
                                             font-size: 22px;
-                                            font-weight: 500;
+                                            font-weight: 700;
                                             font-style: normal;
                                             color: #000;
                                         }

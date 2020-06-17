@@ -14162,7 +14162,7 @@ section.main-contents {
       outline: none; }
   .products-home-carousel li.product .woocommerce-Price-amount {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     color: #000; }
 
@@ -14529,6 +14529,8 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       font-weight: 700;
       font-style: normal;
       margin-bottom: 25px; }
+    #page-single-product .product .summary .woocommerce-product-rating .star-rating span {
+      color: #ffd700; }
     #page-single-product .product .summary p.price {
       font-family: "Roboto";
       font-size: 22px;
@@ -14626,13 +14628,14 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       color: #000;
       height: 70px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      margin-top: 7px !important; }
       @media (max-width: 991px) {
         #page-single-product .product section.related.products ul.products li a h2 {
           font-size: 14px; } }
     #page-single-product .product section.related.products ul.products li a span.price {
       font-size: 22px;
-      font-weight: 500;
+      font-weight: 700;
       font-style: normal;
       color: #000; }
     #page-single-product .product section.related.products ul.products li a.button {

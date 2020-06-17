@@ -74,7 +74,7 @@ $('#testimonials ul').owlCarousel({
 
 $('.related ul').owlCarousel({
 	loop: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
