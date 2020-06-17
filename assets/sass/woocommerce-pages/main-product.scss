@@ -176,6 +176,38 @@
                                 border: 1px solid #ccc;
 
                                 a {
+                                    .star-rating {
+                                        position: absolute;
+                                        right: 0;
+                                        left: 0;
+                                        margin: auto;
+                    
+                                        @media (min-width: 1200px) {
+                                            top: 270px;
+                                        }
+                                        @media (max-width: 1199px) and (min-width: 1023px) {
+                                            top: 224px;
+                                        }
+                                        @media (max-width: 1022px) and (min-width: 992px) {
+                                            top: 302px;
+                                        }
+                                        @media (max-width: 991px) and (min-width: 769px) {
+                                            top: 224px;
+                                        }
+                                        @media (max-width: 768px) and (min-width: 577px) {
+                                            top: 248px;
+                                        }
+                                        @media (max-width: 576px) {
+                                            top: -8px;
+                                            right: 10px;
+                                            left: initial;
+                                        }
+                    
+                                        span {
+                                            color: #ffd700;
+                                        }
+                                    }
+
                                     h2 {
                                         font-size: 16px;
                                         font-weight: 400;

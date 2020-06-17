@@ -14592,6 +14592,33 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
   #page-single-product .product section.related.products ul.products li {
     width: 95%;
     border: 1px solid #ccc; }
+    #page-single-product .product section.related.products ul.products li a .star-rating {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto; }
+      @media (min-width: 1200px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: 270px; } }
+      @media (max-width: 1199px) and (min-width: 1023px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: 224px; } }
+      @media (max-width: 1022px) and (min-width: 992px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: 302px; } }
+      @media (max-width: 991px) and (min-width: 769px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: 224px; } }
+      @media (max-width: 768px) and (min-width: 577px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: 248px; } }
+      @media (max-width: 576px) {
+        #page-single-product .product section.related.products ul.products li a .star-rating {
+          top: -8px;
+          right: 10px;
+          left: initial; } }
+      #page-single-product .product section.related.products ul.products li a .star-rating span {
+        color: #ffd700; }
     #page-single-product .product section.related.products ul.products li a h2 {
       font-size: 16px;
       font-weight: 400;
