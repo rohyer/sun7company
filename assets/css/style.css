@@ -14477,14 +14477,29 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
 #page-single-product {
   margin-top: 30px; }
   #page-single-product .product .images {
+    float: left;
     width: 60%; }
+    @media (max-width: 991px) {
+      #page-single-product .product .images {
+        width: 100%; } }
+  #page-single-product .product .flex-viewport {
+    float: right;
+    width: 86%; }
+    @media (max-width: 576px) {
+      #page-single-product .product .flex-viewport {
+        width: 82%; } }
   #page-single-product .product .summary {
     width: 38%; }
+    @media (max-width: 991px) {
+      #page-single-product .product .summary {
+        float: left;
+        width: 100%; } }
     #page-single-product .product .summary h1.product_title {
       font-family: "Roboto";
       font-size: 24px;
       font-weight: 700;
-      font-style: normal; }
+      font-style: normal;
+      margin-bottom: 25px; }
     #page-single-product .product .summary p.price {
       font-family: "Roboto";
       font-size: 22px;
@@ -14493,18 +14508,74 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       color: #000; }
     #page-single-product .product .summary form.variations_form table.variations tbody tr td {
       float: left;
-      width: 125px; }
-  #page-single-product .product .flex-viewport {
-    float: right;
-    width: 86%; }
+      width: 100%; }
+    #page-single-product .product .summary form.variations_form .single_variation_wrap {
+      float: left;
+      width: 100%; }
+    #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button .quantity {
+      width: 14%; }
+      @media (max-width: 991px) and (min-width: 768px) {
+        #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button .quantity {
+          width: 10%; } }
+      #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button .quantity input[type=number] {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #777; }
+        @media (min-width: 992px) {
+          #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button .quantity input[type=number] {
+            text-indent: 8px; } }
+    #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button button[type=submit] {
+      float: right;
+      width: 84%;
+      height: 50px;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      color: #fff;
+      background-color: #006400;
+      text-transform: uppercase; }
+      @media (max-width: 991px) and (min-width: 768px) {
+        #page-single-product .product .summary form .single_variation_wrap .woocommerce-variation-add-to-cart.variations_button button[type=submit] {
+          width: 88%; } }
+    #page-single-product .product .summary .product_meta .sku_wrapper {
+      display: none;
+      visibility: hidden; }
+  @media (max-width: 991px) {
+    #page-single-product .product .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel h2 {
+      font-family: "Montserrat";
+      font-size: 22px;
+      font-weight: 700;
+      font-style: normal; } }
+  #page-single-product .product .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel#tab-description p span {
+    color: #404040 !important; }
   #page-single-product .product ol.flex-control-nav.flex-control-thumbs {
     display: flex;
     flex-direction: column;
     float: left;
     width: 12%; }
+    @media (max-width: 576px) {
+      #page-single-product .product ol.flex-control-nav.flex-control-thumbs {
+        width: 16%; } }
     #page-single-product .product ol.flex-control-nav.flex-control-thumbs li {
       width: 100%;
       margin-bottom: 10px; }
+  #page-single-product .product section.related.products ul.products li {
+    width: 95%;
+    border: 1px solid #ccc; }
+    #page-single-product .product section.related.products ul.products li a h2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      color: #000;
+      height: 70px;
+      padding-left: 15px;
+      padding-right: 15px; }
+    #page-single-product .product section.related.products ul.products li a span.price {
+      font-size: 22px;
+      font-weight: 500;
+      font-style: normal;
+      color: #000; }
 
 #page-account {
   float: left;

@@ -72,6 +72,31 @@ $('#testimonials ul').owlCarousel({
 	}
 });
 
+$('.related ul').owlCarousel({
+	loop: true,
+	autoplay: false,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: 750,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		0:{
+			items: 2
+		},
+		769:{
+			items: 2
+		},
+		992:{
+			items: 3
+		},
+		1000:{
+			items: 4
+		}
+	}
+});
+
 const doc = document;
 const body = doc.getElementsByTagName('body')[0];
 
@@ -254,43 +279,14 @@ function resizeLoginRegister() {
 resizeLoginRegister();
 
 
-
-// $('#tshirts ul').owlCarousel({
-// 	loop: false,
-// 	autoplay: true,
-// 	autoplayTimeout: 2000,
-// 	autoplaySpeed: true,
-// 	dots: true,
-// 	navText: [" ", " "],
-// 	reponsiveClass: true,
-// 	responsive:{
-// 		0:{
-// 			items: 2
-// 		},
-// 		600:{
-// 			items: 6
-// 		},
-// 		1000:{
-// 			items: 6
-// 		}
-// 	}
-// });
-
-
-// window.addEventListener('scroll', function(e) {
-//     let y = window.pageYOffset
-    
-//     if (y >= 200) {
-//         let header = window.document.querySelector('header')
-//         header.classList.add('header-fixed')
-//     } else if (y < 200) {
-//         let header = window.document.querySelector('header')
-//         header.classList.remove('header-fixed')
-//     }
-// })
-
-// var menu1 = window.document.getElementById('menu-item-13')
-
-// menu1.addEventListener('click', function(e) {
-//     window.scrollTo(0, 500)
-// })
+// FUNÇÃO PARA TRANSFORMAR PRODUTOS RELACIONADOS EM CARROSSEL
+function relatedProductsSlider() {
+	const relatedProducts = doc.querySelector('section.related.products ul.products');
+	relatedProducts.classList.add('owl-carousel');
+	relatedProducts.classList.add('owl-theme');
+}
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'single-product') {
+		relatedProductsSlider();
+	}
+}
