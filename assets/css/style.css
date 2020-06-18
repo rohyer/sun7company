@@ -14468,6 +14468,10 @@ section#primary main#main #mobile-filter {
 @media (max-width: 578px) {
   section#primary main#main #sun-woocommerce-content h1 {
     font-size: 18px; } }
+@media (max-width: 576px) {
+  section#primary main#main #sun-woocommerce-content ul.products {
+    float: left;
+    margin-top: 15px; } }
 section#primary main#main #sun-woocommerce-content ul.products li.product {
   border: 1px solid #ccc; }
   section#primary main#main #sun-woocommerce-content ul.products li.product a h2.woocommerce-loop-product__title {
@@ -14477,7 +14481,8 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     color: #000;
     height: 70px;
     padding-left: 15px !important;
-    padding-right: 15px !important; }
+    padding-right: 15px !important;
+    margin-top: 7px !important; }
     @media (max-width: 576px) {
       section#primary main#main #sun-woocommerce-content ul.products li.product a h2.woocommerce-loop-product__title {
         font-size: 13px;
@@ -14502,6 +14507,30 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       section#primary main#main #sun-woocommerce-content ul.products li.product a.button {
         font-size: 14px;
         width: 80%; } }
+  section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto; }
+    @media (min-width: 1200px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+        top: 258px; } }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+        top: 216px; } }
+    @media (max-width: 991px) and (min-width: 769px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+        top: 218px; } }
+    @media (max-width: 768px) and (min-width: 577px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+        top: 250px; } }
+    @media (max-width: 576px) {
+      section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating {
+        top: -8px;
+        right: 10px;
+        left: initial; } }
+    section#primary main#main #sun-woocommerce-content ul.products li.product a .star-rating span {
+      color: #ffd700; }
 
 #page-single-product {
   margin-top: 30px; }
