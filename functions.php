@@ -186,6 +186,21 @@ function woo_custom_product_searchform( $form ) {
   return $form;
 }
 
+// FUNÇÃO DE PESQUISA
+add_filter( 'get_product_search_form_responsive' , 'woo_custom_product_searchform_responsive' );
+
+function woo_custom_product_searchform_r( $form ) {
+    $form = '<form role="search" method="get" id="searchform_responsive" action="' . esc_url( home_url( '/'  ) ) . '">
+    <div>
+      <label class="screen-reader-text" for="s_r">' . __( 'Search for:', 'woocommerce' ) . '</label>
+      <input type="text" value="' . get_search_query() . '" name="s_r" id="s_r" placeholder="' . __( 'My Search form', 'woocommerce' ) . '" />
+      <input type="submit" id="searchsubmit_responsive" value="'. esc_attr__( 'Search', 'woocommerce' ) .'" />
+      <input type="hidden" name="post_type" value="product" />
+    </div>
+  </form>';
+  return $form;
+}
+
 // FUNÇÃO PARA MUDAR O NOME DO BOTÃO COMPRAR
 // To change add to cart text on single product page
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
@@ -252,9 +267,9 @@ function g_scripts() {
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css');
 
     wp_enqueue_script('jquery-3.4.1', get_template_directory_uri() . '/assets/js/jquery-3.4.1.js');
-    wp_enqueue_script('index', get_template_directory_uri() . '/assets/js/bootstrap/index.js');
+    
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap/dist/js/bootstrap.min.js');
-    wp_enqueue_script('modal', get_template_directory_uri() . '/assets/js/bootstrap/modal.js');
+    
     wp_enqueue_script('owl.carousel', get_template_directory_uri() . '/assets/js/owl/owl.carousel.js');
     wp_enqueue_script('owl.autoplay', get_template_directory_uri() . '/assets/js/owl/owl.autoplay.js', array(), '1.0', true);
     wp_enqueue_script('owl.navigation', get_template_directory_uri() . '/assets/js/owl/owl.navigation.js', array(), '1.0', true);

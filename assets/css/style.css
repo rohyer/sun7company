@@ -13939,10 +13939,10 @@ header nav#responsive-menu {
   float: left;
   width: 100%;
   margin-top: 20px; }
-  #responsive-search form#searchform {
+  #responsive-search form#searchform_responsive {
     position: relative;
     width: 100%; }
-    #responsive-search form#searchform input#s {
+    #responsive-search form#searchform_responsive input#s_r {
       width: 100%;
       text-indent: 10px;
       height: 40px;
@@ -13952,9 +13952,9 @@ header nav#responsive-menu {
       font-size: 14px;
       font-weight: 500;
       font-style: normal; }
-      #responsive-search form#searchform input#s:focus {
+      #responsive-search form#searchform_responsive input#s_r:focus {
         outline: none; }
-    #responsive-search form#searchform button#searchsubmit {
+    #responsive-search form#searchform_responsive button#searchsubmit_responsive {
       cursor: pointer;
       width: 40px;
       height: 40px;
@@ -13964,9 +13964,9 @@ header nav#responsive-menu {
       background-color: transparent;
       border: none;
       z-index: 999; }
-      #responsive-search form#searchform button#searchsubmit i {
+      #responsive-search form#searchform_responsive button#searchsubmit_responsive i {
         color: #000; }
-      #responsive-search form#searchform button#searchsubmit:focus {
+      #responsive-search form#searchform_responsive button#searchsubmit_responsive:focus {
         outline: none; }
 
 @media (min-width: 992px) {
