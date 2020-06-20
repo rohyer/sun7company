@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row">
                     <div id="logo" class="d-none justify-content-center justify-content-lg-start d-lg-flex col-lg-3 col-xl-3">
-                        <h1><a href="<?php echo home_url( '/' ); ?>"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
+                        <h1><a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/cropped-logo.png"></a></h1>
                     </div>
 
                     <div id="main-search" class="d-none d-lg-flex col-lg-6 col-xl-6 justify-content-lg-start align-items-lg-center">
@@ -113,7 +113,7 @@
                     </nav>
 
                     <div id="mobile-logo" class="d-flex col-6 justify-content-center d-lg-none">
-                        <h1><a href="./loja"><img src="/sun7company/wp-content/themes/sun7company/assets/img/cropped-logo.png"></a></h1>
+                        <h1><a href="./loja"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/cropped-logo.png"></a></h1>
                     </div>
 
                     <div id="mobile-mini-cart" class="d-flex col-3 d-lg-none">
