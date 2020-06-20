@@ -14078,17 +14078,22 @@ header nav#responsive-menu {
     margin: 0;
     padding: 0; }
     #brands-banners ul li {
+      float: left;
+      width: 100%;
       list-style: none; }
-      #brands-banners ul li img {
-        width: auto;
-        height: auto;
-        margin: auto; }
-        @media (max-width: 992px) and (min-width: 769px) {
-          #brands-banners ul li img {
-            height: 75px; } }
-        @media (max-width: 768px) {
-          #brands-banners ul li img {
-            height: 75px; } }
+      #brands-banners ul li a {
+        float: left;
+        width: 100%; }
+        #brands-banners ul li a img {
+          width: auto;
+          height: auto;
+          margin: auto; }
+          @media (max-width: 992px) and (min-width: 769px) {
+            #brands-banners ul li a img {
+              height: 75px; } }
+          @media (max-width: 768px) {
+            #brands-banners ul li a img {
+              height: 75px; } }
 
 section.main-contents {
   float: left;
