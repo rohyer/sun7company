@@ -14,20 +14,6 @@
                     </div>
                     <div id="content-box-register">
                         <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-
-                        <!-- <div id="first-register" class="col-6">
-                            <h6>Primeira compra?</h6>
-                            <a class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
-                                Cadastre-se
-                            </a>
-
-                            <div id="text-register">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span>Cadastre seu endereço para facilitar nas suas próximas compras</span>
-                            </div>
-
-                            
-                        </div> -->
                     </div>
                 </div>
             </div>

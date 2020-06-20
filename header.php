@@ -30,18 +30,6 @@
                         <a href="https://www.instagram.com/sun7company_/?hl=pt-br"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fas fa-envelope"></i></a>
                     </div>
-
-                    <!--<div id="header-menu" class="d-none d-md-flex col-md-9 col-lg-7 offset-lg-2 col-xl-7 offset-xl-3 justify-content-md-end">
-
-                        <?php
-
-                        // wp_nav_menu( array(
-                        //     'menu' => 3,
-                        //     'theme_location' => 3
-                        // ));
-
-                        ?>
-                    </div> -->
                 </div>
             </div>   
         </div>
@@ -88,9 +76,6 @@
 
                                                 $firstTermChildMobile = get_term_children( $firstTermIdMobile, 'product_cat');
                                                 
-                                                
-                                                //echo '<li class="closed-mobile-second-level">';
-                                                //echo '<a href="'.get_term_link($category).'" >';
                                                 if ( !empty($firstTermChildMobile) ) {
                                                     echo '<li class="listener-second-level closed-mobile-second-level">';
                                                     echo '<a href="'.get_term_link($category).'" >' . $category->name . '</a>' . '<i class="mobile-menu-arrow-down fas fa-chevron-down"></i>';
@@ -98,8 +83,7 @@
                                                     echo '<li>';
                                                     echo '<a href="'.get_term_link($category).'" >' . $category->name . '</a>';
                                                 }
-                                                //echo '</a>';
-                                                //echo ;
+                                                
 
                                                     $theCatIdMobile = get_term_by( 'slug', $category->name, 'product_cat');
                                                     $termIdMobile = $theCatIdMobile->term_id;
@@ -207,25 +191,6 @@
 
                         <?php echo '</ul>';
                     }
-
-                    
-                    // $theCatId = get_term_by( 'slug', 'roupas', 'product_cat' );
-                    // $theCatId = $theCatId->term_id;
-                    // echo $theCatId;
-
-
-                    // $term_id = 73;
-                    // $taxonomy_name = 'product_cat';
-                    // $termchildren = get_term_children( $term_id, $taxonomy_name );
-                    
-                    // echo '<ul>';
-                    // foreach ( $termchildren as $child ) {
-                    //     $term = get_term_by( 'id', $child, $taxonomy_name );
-                    //     echo '<li><a href="' . get_term_link( $child, $taxonomy_name ) . '">' . $term->name . '</a></li>';
-                        
-                    // }
-                    // echo '</ul>';
-
 
                     ?>
                 </div>

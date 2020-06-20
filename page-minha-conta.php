@@ -14,8 +14,6 @@
                 <div class="col-12">
                     <div id="main-content-account">
                         <?php echo do_shortcode('[woocommerce_my_account]'); ?>
-                        <?php //echo do_shortcode('[wc_login_form_bbloomer]'); ?>
-                        <?php //echo do_shortcode('[wc_reg_form_bbloomer]'); ?>
                     </div>
                 </div>
             </div>

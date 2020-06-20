@@ -6,14 +6,6 @@ function my_function_admin_bar(){
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 
-// add_action( 'after_setup_theme', 'woocommerce_support' );
-
-// function woocommerce_support()
-//     add_theme_support( 'woocommerce' );
-// }
-
-
-
 // Registro das suas widgets
 if ( function_exists('register_sidebar') )
 {
@@ -32,11 +24,6 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</h1>',
     ) );
 }
-
-
-
-
-
 
 
 add_action( 'wp_enqueue_scripts', 'wc_remove_lightboxes', 99 );
@@ -232,32 +219,6 @@ function verifica_acessos_cadastro() {
 }
 add_action( 'wp', 'verifica_acessos_cadastro' );
 
-
-
-
-// function get_the_category( $id = false ) {
-//     $categories = get_the_terms( $id, 'category' );
-//     if ( ! $categories || is_wp_error( $categories ) ) {
-//         $categories = array();
-//     }
- 
-//     $categories = array_values( $categories );
- 
-//     foreach ( array_keys( $categories ) as $key ) {
-//         _make_cat_compat( $categories[ $key ] );
-//     }
- 
-//     /**
-//      * Filters the array of categories to return for a post.
-//      *
-//      * @since 3.1.0
-//      * @since 4.4.0 Added `$id` parameter.
-//      *
-//      * @param WP_Term[] $categories An array of categories to return for the post.
-//      * @param int|false $id         ID of the post.
-//      */
-//     return apply_filters( 'get_the_categories', $categories, $id );
-// }
 
 
 add_theme_support( 'post-thumbnails' );
