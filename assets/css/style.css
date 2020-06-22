@@ -14627,6 +14627,7 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
       margin-bottom: 10px; }
   #page-single-product .product section.related.products ul.products li {
     width: 95%;
+    margin: 0 7px;
     border: 1px solid #ccc; }
     #page-single-product .product section.related.products ul.products li a .star-rating {
       position: absolute;
