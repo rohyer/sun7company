@@ -113,7 +113,7 @@
                     </nav>
 
                     <div id="mobile-logo" class="d-flex col-6 justify-content-center d-lg-none">
-                        <h1><a href="./loja"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/cropped-logo.png"></a></h1>
+                        <h1><a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/cropped-logo.png"></a></h1>
                     </div>
 
                     <div id="mobile-mini-cart" class="d-flex col-3 d-lg-none">

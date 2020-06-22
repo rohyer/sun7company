@@ -205,10 +205,10 @@ function resizeAccountAdress() {
 	const woocommerceAdress2 = doc.querySelector('.woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2.col-2');
 	
 	woocommerceAdress1.classList.remove('col-1');
-	woocommerceAdress1.classList.add('col-lg-8');
+	woocommerceAdress1.classList.add('col-lg-7');
 	woocommerceAdress1.classList.add('col-12');
 	woocommerceAdress2.classList.remove('col-2');
-	woocommerceAdress2.classList.add('col-lg-4');
+	woocommerceAdress2.classList.add('col-lg-5');
 	woocommerceAdress2.classList.add('col-12');
 }
 for (let i = 0; i < body.classList.length; i++) {
@@ -226,9 +226,11 @@ function resizeLoginRegister() {
 			const customerAccount1 = doc.querySelector('#customer_login .col-1');
 			const customerAccount2 = doc.querySelector('#customer_login .col-2');
 			customerAccount1.classList.remove('col-1');
-			customerAccount1.classList.add('col-6');
+			customerAccount1.classList.add('col-lg-6');
+			customerAccount1.classList.add('col-12');
 			customerAccount2.classList.remove('col-2');
-			customerAccount2.classList.add('col-6');
+			customerAccount2.classList.add('col-lg-6');
+			customerAccount2.classList.add('col-12');
 		} else if (body.classList[i] == 'page-id-1820') {
 			const uColumn2 = doc.querySelector('#content-box-register .woocommerce .u-column2');
 			const uColumn2H2 = doc.querySelector('#content-box-register .woocommerce .u-column2 h2');
