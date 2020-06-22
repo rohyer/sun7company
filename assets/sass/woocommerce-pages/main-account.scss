@@ -169,6 +169,25 @@
                     }
                 }
             }
+
+            form {
+                &.woocommerce-ResetPassword {
+                    &.lost_reset_password {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+
+                        p {
+                            &.woocommerce-form-row {
+                                input {
+                                    height: 35px;
+                                    border: 1px solid #bbb;
+                                    text-indent: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

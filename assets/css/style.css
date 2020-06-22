@@ -14739,6 +14739,13 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     height: 35px;
     border: 1px solid #bbb;
     text-indent: 10px; }
+  #page-account #main-content-account .woocommerce form.woocommerce-ResetPassword.lost_reset_password {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #page-account #main-content-account .woocommerce form.woocommerce-ResetPassword.lost_reset_password p.woocommerce-form-row input {
+      height: 35px;
+      border: 1px solid #bbb;
+      text-indent: 10px; }
 
 #page-cart {
   float: left;
@@ -14777,6 +14784,12 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     color: #444; }
   #page-cart #main-content-cart form.woocommerce-cart-form table.shop_table tbody tr .coupon input#coupon_code {
     width: 175px; }
+  @media (max-width: 768px) {
+    #page-cart #main-content-cart form.woocommerce-cart-form table.shop_table tbody tr .coupon input#coupon_code {
+      width: 100%; }
+    #page-cart #main-content-cart form.woocommerce-cart-form table.shop_table tbody tr .coupon button[type=submit] {
+      width: 100%;
+      margin-top: 10px; } }
   #page-cart #main-content-cart .cart-collaterals {
     margin-top: 45px; }
     @media (max-width: 991px) and (min-width: 769px) {
