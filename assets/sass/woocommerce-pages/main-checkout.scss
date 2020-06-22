@@ -9,15 +9,155 @@
                 &.checkout {
                     &.woocommerce-checkout {
                         #customer_details {
+                            float: left;
+                            padding-left: 0;
+                            padding-right: 0;
+
+                                &:nth-child(1), &:nth-child(2) {
+                                    .col-12 {
+                                        @media (max-width: 992px) {
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                        }
+
+                                        @media (min-width: 991px) {
+                                            padding-left: 0;
+                                            padding-right: 15px;
+                                        }
+                                    }
+                                }
+                            
                             .woocommerce-billing-fields {
                                 .woocommerce-billing-fields__field-wrapper {
                                     p {
                                         &#billing_first_name_field, &#billing_last_name_field {
+                                            float: left;
+                                            width: 50%;
+
+                                            label {
+                                                float: left;
+                                                width: 100%;
+                                            }
+
+                                            span {
+                                                float: left;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        &#billing_company_field, &#billing_address_1_field, &#billing_address_2_field, &#billing_city_field, &#billing_postcode_field, &#billing_phone_field, &#billing_email_field {
+                                            float: left;
                                             width: 100%;
+
+                                            label {
+                                                float: left;
+                                                width: 100%;
+
+                                                
+                                            }
+
+                                            span {
+                                                float: left;
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        &#billing_company_field {
+                                            label {
+                                                span {
+                                                    &.optional {
+                                                        float: initial;
+                                                        width: initial;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &#billing_country_field, &#billing_state_field {
+                                            float: left;
+                                            width: 100%;
+
+                                            label {
+                                                margin-right: 8px;
+                                            }
+
+                                            span {
+                                                &.woocommerce-input-wrapper {
+                                                    @media (min-width: 992px) {
+                                                        width: 60%;
+                                                    }
+                                                    @media (max-width: 991px) and (min-width: 769px) {
+                                                        width: 40%;
+                                                    }
+                                                    @media (max-width: 768px) {
+                                                        width: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+
+                                        span {
+                                            &.woocommerce-input-wrapper {
+                                                input {
+                                                    &.input-text {
+                                                        height: 35px;
+                                                        border: 1px solid #bbb;
+                                                        border-radius: 2px;
+                                                        text-indent: 10px;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             } 
+                        }
+
+                        .woocommerce-additional-fields {
+                            .woocommerce-additional-fields__field-wrapper {
+                                p {
+                                    &#order_comments_field {
+                                        float: left;
+                                        width: 100%;
+
+                                        label {
+                                            float: left;
+                                            width: 100%;
+                                        }
+
+                                        span {
+                                            float: left;
+                                            width: 100%;
+
+                                            &.optional {
+                                                float: initial;
+                                                width: initial;
+                                            }
+
+                                            textarea {
+                                                height: 100px;
+                                                border: 1px solid #bbb;
+                                                border-radius: 2px;
+                                                padding: 5px 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        h3 {
+                            &#order_review_heading {
+                                float: left;
+                            }
+                        }
+
+                        #order_review {
+                            float: left;
+                            
+                            padding-left: 0;
+                            padding-right: 0;
                         }
                     }
                 }

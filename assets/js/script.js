@@ -74,7 +74,7 @@ $('#testimonials ul').owlCarousel({
 
 $('.related ul').owlCarousel({
 	loop: true,
-	autoplay: false,
+	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
@@ -192,6 +192,13 @@ function resizeCheckout() {
 	customerDetails2.classList.remove('col-2');
 	customerDetails1.classList.add('col-12');
 	customerDetails2.classList.add('col-12');
+
+	const generalCustomerDetails = doc.getElementById("customer_details");
+	const orderReview = doc.getElementById("order_review");
+	generalCustomerDetails.classList.add("col-lg-6");
+	generalCustomerDetails.classList.add("col-12");
+	orderReview.classList.add("col-lg-6");
+	orderReview.classList.add("col-12");
 }
 for (let i = 0; i < body.classList.length; i++) {
 	if (body.classList[i] == 'woocommerce-checkout') {
