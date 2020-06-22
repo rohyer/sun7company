@@ -78,6 +78,47 @@
                     }
                 }
             }
+
+            .woocommerce-MyAccount-content {
+                p {
+                    padding: 0 15px;
+                }
+
+                .u-columns {
+                    &.woocommerce-Addresses {
+                        .u-column1 {
+                            &.woocommerce-Address {
+                                float: left;
+
+                                header {
+                                    &.woocommerce-Address-title {
+                                        &.title {
+                                            h3 {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .u-column2 {
+                            &.woocommerce-Address {
+                                float: left;
+
+                                header {
+                                    &.woocommerce-Address-title {
+                                        &.title {
+                                            h3 {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

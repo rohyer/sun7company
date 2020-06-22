@@ -14712,6 +14712,16 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     border-radius: 2px;
     height: 40px;
     text-indent: 10px; }
+  #page-account #main-content-account .woocommerce .woocommerce-MyAccount-content p {
+    padding: 0 15px; }
+  #page-account #main-content-account .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1.woocommerce-Address {
+    float: left; }
+    #page-account #main-content-account .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1.woocommerce-Address header.woocommerce-Address-title.title h3 {
+      font-size: 20px; }
+  #page-account #main-content-account .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2.woocommerce-Address {
+    float: left; }
+    #page-account #main-content-account .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2.woocommerce-Address header.woocommerce-Address-title.title h3 {
+      font-size: 20px; }
 
 #page-cart {
   float: left;

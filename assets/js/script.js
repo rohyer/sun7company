@@ -184,6 +184,7 @@ if (body.classList[1] == 'tax-product_cat' || body.classList[2] == 'search-resul
 	openCloseFilter();
 }
 
+// FUNÇÃO PARA AJUSTAR COL
 function resizeCheckout() {
 	const customerDetails1 = doc.querySelector('#customer_details .col-1');
 	const customerDetails2 = doc.querySelector('#customer_details .col-2');
@@ -198,9 +199,30 @@ for (let i = 0; i < body.classList.length; i++) {
 	}
 }
 
+// FUNÇÃO PARA AJUSTA COL
+function resizeAccountAdress() {
+	const woocommerceAdress1 = doc.querySelector('.woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1.col-1');
+	const woocommerceAdress2 = doc.querySelector('.woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2.col-2');
+	
+	woocommerceAdress1.classList.remove('col-1');
+	woocommerceAdress1.classList.add('col-lg-8');
+	woocommerceAdress1.classList.add('col-12');
+	woocommerceAdress2.classList.remove('col-2');
+	woocommerceAdress2.classList.add('col-lg-4');
+	woocommerceAdress2.classList.add('col-12');
+}
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'woocommerce-edit-address') {
+		resizeAccountAdress();
+	}
+}
+
+
+// FUNÇÃO PARA AJUSTAR COL
 function resizeLoginRegister() {
+	const customerLogin = doc.querySelector('#customer_login');
 	for (let i = 0; i < body.classList.length; i++) {
-		if (body.classList[i] == 'woocommerce-account') {
+		if (body.classList[i] == 'woocommerce-account' && customerLogin != null) {
 			const customerAccount1 = doc.querySelector('#customer_login .col-1');
 			const customerAccount2 = doc.querySelector('#customer_login .col-2');
 			customerAccount1.classList.remove('col-1');
