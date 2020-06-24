@@ -85,7 +85,7 @@ $('.related ul').owlCarousel({
 		0:{
 			items: 1
 		},
-		769:{
+		480:{
 			items: 2
 		},
 		992:{

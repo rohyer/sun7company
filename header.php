@@ -26,8 +26,8 @@
                     </div>
 
                     <div id="social-media-header" class="d-none d-lg-flex col-lg-3 col-xl-3 justify-content-lg-end">
-                        <a href="https://pt-br.facebook.com/sun7company/?ref=page_internal"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/sun7company_/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pt-br.facebook.com/sun7company/?ref=page_internal" target="__blank" rel=”noopener noreferrer”><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sun7company_/?hl=pt-br" target="__blank" rel=”noopener noreferrer”><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>

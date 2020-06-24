@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+    <?php get_template_part('elements/e', 'arrow-top') ?>
+
     <?php get_template_part('elements/e', 'main-banners') ?>
 
     <?php get_template_part('elements/e', 'brands-banners') ?>
