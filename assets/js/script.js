@@ -321,3 +321,40 @@ for (let i = 0; i < body.classList.length; i++) {
 		relatedProductsSlider();
 	}
 }
+
+
+
+// Clique para subir na Home
+	const arrowTopGlobal = window.document.getElementById('arrow-top')
+	arrowTopGlobal.addEventListener('click', goTop)
+	function goTop() {
+		let windowTop = window.document.getElementById('desktop-header').offsetTop
+		scrollToPosition(windowTop)
+	}
+
+
+// Suviazação do scroll por clique
+function scrollToPosition(toPosition) {
+	smoothScrollTo(toPosition, 1000)
+}
+function smoothScrollTo(endY, duration) {
+	const startY = window.scrollY || window.pageYOffset
+	const distanceY = endY - startY
+	const startTime = new Date().getTime()
+
+	duration = typeof duration !== 'undefined' ? duration : 400
+
+	const easeInOutQuart = function(time, from, distance, duration) {
+		if ((time /= duration /2 ) < 1) return distance / 2 * time * time * time * time * time + from
+		return -distance /2 * ((time -= 2) * time * time * time - 2) + from
+	}
+
+	const timer = setInterval(function() {
+		const time = new Date().getTime() - startTime
+		const newY = easeInOutQuart(time, startY, distanceY, duration)
+		if (time >= duration) {
+			clearInterval(timer)
+		}
+		window.scroll(0, newY)
+	}, 1000 / 60)
+}
