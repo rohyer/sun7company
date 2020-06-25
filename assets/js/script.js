@@ -72,6 +72,94 @@ $('#testimonials ul').owlCarousel({
 	}
 });
 
+$('#tshirts ul.products').owlCarousel({
+	loop: false,
+	autoplay: false,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: 750,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		320:{
+			items: 2
+		},
+		992:{
+			items: 3
+		},
+		1199:{
+			items: 4
+		}
+	}
+});
+
+$('#winter ul.products').owlCarousel({
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: 750,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		320:{
+			items: 2
+		},
+		992:{
+			items: 3
+		},
+		1199:{
+			items: 4
+		}
+	}
+});
+
+$('#cap ul.products').owlCarousel({
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: 750,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		320:{
+			items: 2
+		},
+		992:{
+			items: 3
+		},
+		1199:{
+			items: 4
+		}
+	}
+});
+
+$('#sneakers ul.products').owlCarousel({
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 2500,
+	autoplayHoverPause: true,
+	autoplaySpeed: 750,
+	dots: false,
+	navText: [" ", " "],
+	responsiveClass: true,
+	responsive:{
+		320:{
+			items: 2
+		},
+		992:{
+			items: 3
+		},
+		1199:{
+			items: 4
+		}
+	}
+});
+
 $('.related ul').owlCarousel({
 	loop: true,
 	autoplay: true,
@@ -309,6 +397,27 @@ function resizeLoginRegister() {
 }
 resizeLoginRegister();
 
+//FUNÇÃO PARA TRANSFORMAR PRODUTOS EM CARROSSEL
+function productsSlider() {
+	const tshirtsProducts = doc.querySelector('section#tshirts .products-home-carousel ul');
+	const winterProducts = doc.querySelector('section#winter .products-home-carousel ul.products');
+	const capProducts = doc.querySelector('section#cap .products-home-carousel ul.products');
+	const sneakersProducts = doc.querySelector('section#sneakers .products-home-carousel ul.products');
+
+	tshirtsProducts.classList.add('owl-carousel');
+	tshirtsProducts.classList.add('owl-theme');
+	winterProducts.classList.add('owl-carousel');
+	winterProducts.classList.add('owl-theme');
+	capProducts.classList.add('owl-carousel');
+	capProducts.classList.add('owl-theme');
+	sneakersProducts.classList.add('owl-carousel');
+	sneakersProducts.classList.add('owl-theme');
+}
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'home') {
+		productsSlider();
+	}
+}
 
 // FUNÇÃO PARA TRANSFORMAR PRODUTOS RELACIONADOS EM CARROSSEL
 function relatedProductsSlider() {
@@ -323,14 +432,13 @@ for (let i = 0; i < body.classList.length; i++) {
 }
 
 
-
 // Clique para subir na Home
-	const arrowTopGlobal = window.document.getElementById('arrow-top')
-	arrowTopGlobal.addEventListener('click', goTop)
-	function goTop() {
-		let windowTop = window.document.getElementById('desktop-header').offsetTop
-		scrollToPosition(windowTop)
-	}
+const arrowTopGlobal = window.document.getElementById('arrow-top')
+arrowTopGlobal.addEventListener('click', goTop)
+function goTop() {
+	let windowTop = window.document.getElementById('desktop-header').offsetTop
+	scrollToPosition(windowTop)
+}
 
 
 // Suviazação do scroll por clique
@@ -357,4 +465,13 @@ function smoothScrollTo(endY, duration) {
 		}
 		window.scroll(0, newY)
 	}, 1000 / 60)
+}
+
+for (let i = 0; i < body.classList.length; i++) {
+	if (body.classList[i] == 'home') {
+		productsSlider();
+	}
+	else if (body.classList[i] == 'single-product') {
+		relatedProductsSlider();
+	}
 }

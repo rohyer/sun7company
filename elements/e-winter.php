@@ -7,7 +7,10 @@
         </div>
 
         <div class="products-home-carousel">
-            <?php echo do_shortcode('[products_slider cats="18" limit="8" slide_to_show="4" slide_to_scroll="1" autoplay="true" autoplay_speed="2500" dots="false" speed="750"]'); ?>
+
+            <?php echo do_shortcode('[products limit="6" columns="4" category="manga-longa"]') ?>
+
+            
         </div>
     </div>
 </section>
