@@ -288,11 +288,7 @@ function resizeCheckout() {
 	orderReview.classList.add("col-lg-6");
 	orderReview.classList.add("col-12");
 }
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'woocommerce-checkout') {
-		resizeCheckout();
-	}
-}
+
 
 // FUNÇÃO PARA AJUSTA COL
 function resizeAccountAdress() {
@@ -306,11 +302,7 @@ function resizeAccountAdress() {
 	woocommerceAdress2.classList.add('col-lg-5');
 	woocommerceAdress2.classList.add('col-12');
 }
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'woocommerce-edit-address') {
-		resizeAccountAdress();
-	}
-}
+
 
 
 // FUNÇÃO PARA AJUSTAR COL
@@ -413,11 +405,7 @@ function productsSlider() {
 	sneakersProducts.classList.add('owl-carousel');
 	sneakersProducts.classList.add('owl-theme');
 }
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'home') {
-		productsSlider();
-	}
-}
+
 
 // FUNÇÃO PARA TRANSFORMAR PRODUTOS RELACIONADOS EM CARROSSEL
 function relatedProductsSlider() {
@@ -425,19 +413,33 @@ function relatedProductsSlider() {
 	relatedProducts.classList.add('owl-carousel');
 	relatedProducts.classList.add('owl-theme');
 }
-for (let i = 0; i < body.classList.length; i++) {
-	if (body.classList[i] == 'single-product') {
-		relatedProductsSlider();
-	}
+
+
+if (body.classList[0] == 'home') {
+	window.addEventListener('scroll', function(e) {
+		let y = window.pageYOffset
+		let mainImage = window.document.getElementById('main-image').offsetHeight
+
+		if (y > mainImage - 10) {
+			let arrowTop = window.document.getElementById('main-image')
+			arrowTop.style.opacity = 100
+			arrowTop.style.transitionDuration = '.5s'
+		} else {
+			let arrowTop = window.document.getElementById('main-image')
+			arrowTop.style.opacity = 0
+		}
+	})
 }
 
 
 // Clique para subir na Home
-const arrowTopGlobal = window.document.getElementById('arrow-top')
-arrowTopGlobal.addEventListener('click', goTop)
-function goTop() {
-	let windowTop = window.document.getElementById('desktop-header').offsetTop
-	scrollToPosition(windowTop)
+if (body.classList[0] == 'home') {
+	const arrowTopGlobal = window.document.getElementById('arrow-top')
+	arrowTopGlobal.addEventListener('click', goTop)
+	function goTop() {
+		let windowTop = window.document.getElementById('desktop-header').offsetTop
+		scrollToPosition(windowTop)
+	}
 }
 
 
@@ -473,5 +475,9 @@ for (let i = 0; i < body.classList.length; i++) {
 	}
 	else if (body.classList[i] == 'single-product') {
 		relatedProductsSlider();
+	} else if (body.classList[i] == 'woocommerce-edit-address') {
+		resizeAccountAdress();
+	} else if (body.classList[i] == 'woocommerce-checkout') {
+		resizeCheckout();
 	}
 }
