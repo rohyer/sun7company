@@ -155,8 +155,8 @@ $('#cap ul.products').owlCarousel({
 });
 
 $('#sneakers ul.products').owlCarousel({
-	loop: false,
-	autoplay: false,
+	loop: true,
+	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,

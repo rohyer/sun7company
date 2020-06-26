@@ -49,6 +49,17 @@
             </ul>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="developed-by">
+                    <span>Developed by: Guilherme R.</span>
+                    <span>E-mail guilhermerl.dev@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <?php wp_footer(); ?>
