@@ -14385,7 +14385,9 @@ section#leads {
         visibility: hidden; }
       section#leads #leads-form #wpcf7-f1812-o1 form .wpcf7-response-output {
         float: left;
-        width: 100%; }
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0; }
       section#leads #leads-form #wpcf7-f1812-o1 form input {
         font-family: "Roboto";
         font-size: 16px;
