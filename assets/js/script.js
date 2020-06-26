@@ -26,7 +26,11 @@ $('#brands-banners ul').owlCarousel({
 	// autoplayTimeout: 2500,
 	// autoplaySpeed: true,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		0:{
@@ -73,13 +77,17 @@ $('#testimonials ul').owlCarousel({
 });
 
 $('#tshirts ul.products').owlCarousel({
-	loop: false,
-	autoplay: false,
+	loop: true,
+	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		320:{
@@ -101,7 +109,11 @@ $('#winter ul.products').owlCarousel({
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		320:{
@@ -123,7 +135,11 @@ $('#cap ul.products').owlCarousel({
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		320:{
@@ -139,13 +155,17 @@ $('#cap ul.products').owlCarousel({
 });
 
 $('#sneakers ul.products').owlCarousel({
-	loop: true,
-	autoplay: true,
+	loop: false,
+	autoplay: false,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		320:{
@@ -161,13 +181,17 @@ $('#sneakers ul.products').owlCarousel({
 });
 
 $('.related ul').owlCarousel({
-	loop: true,
+	loop: false,
 	autoplay: true,
 	autoplayTimeout: 2500,
 	autoplayHoverPause: true,
 	autoplaySpeed: 750,
 	dots: false,
-	navText: [" ", " "],
+	nav: true,
+	navText: [
+		"<i class='fas fa-chevron-left'></i>",
+		"<i class='fas fa-chevron-right'></i>"
+	],
 	responsiveClass: true,
 	responsive:{
 		0:{
@@ -420,7 +444,7 @@ if (body.classList[0] == 'home') {
 		let y = window.pageYOffset
 		let mainImage = window.document.getElementById('main-image').offsetHeight
 
-		if (y > mainImage - 10) {
+		if (y > mainImage + 500) {
 			let arrowTop = window.document.getElementById('main-image')
 			arrowTop.style.opacity = 100
 			arrowTop.style.transitionDuration = '.5s'

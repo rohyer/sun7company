@@ -4,6 +4,7 @@
     background-color: #000;
 
     ul {
+        position: relative;
         margin: 0;
         padding: 0;
 
@@ -26,6 +27,44 @@
                     }
                     @media (max-width: 768px) {
                         height: 75px;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            margin: 0;
+
+            button {
+                &.owl-prev {
+                    float: left;
+                    outline: none;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                    
+                    i {
+                        font-size: 28px;
+                        color: #000;
+                    }
+                }
+
+                &.owl-next {
+                    float: right;
+                    margin-right: 4px;
+                    outline: none;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                    
+                    i {
+                        font-size: 28px;
+                        color: #000;
                     }
                 }
             }

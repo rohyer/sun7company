@@ -13977,7 +13977,7 @@ header nav#responsive-menu {
   position: fixed;
   bottom: 100px;
   right: 28px;
-  width: 58px;
+  width: 60px;
   height: 54px;
   opacity: 0;
   z-index: 999; }
@@ -14108,6 +14108,7 @@ header nav#responsive-menu {
   width: 100%;
   background-color: #000; }
   #brands-banners ul {
+    position: relative;
     margin: 0;
     padding: 0; }
     #brands-banners ul li {
@@ -14127,6 +14128,28 @@ header nav#responsive-menu {
           @media (max-width: 768px) {
             #brands-banners ul li a img {
               height: 75px; } }
+    #brands-banners ul .owl-nav {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      margin: 0; }
+      #brands-banners ul .owl-nav button.owl-prev {
+        float: left;
+        outline: none; }
+        #brands-banners ul .owl-nav button.owl-prev:hover {
+          background-color: transparent; }
+        #brands-banners ul .owl-nav button.owl-prev i {
+          font-size: 28px;
+          color: #000; }
+      #brands-banners ul .owl-nav button.owl-next {
+        float: right;
+        margin-right: 4px;
+        outline: none; }
+        #brands-banners ul .owl-nav button.owl-next:hover {
+          background-color: transparent; }
+        #brands-banners ul .owl-nav button.owl-next i {
+          font-size: 28px;
+          color: #000; }
 
 section.main-contents {
   float: left;
@@ -14155,6 +14178,11 @@ section.main-contents {
   padding-left: 0 !important; }
   .products-home-carousel li.product a:focus {
     outline: none; }
+  .products-home-carousel li.product a img {
+    width: 100%;
+    height: 264px !important;
+    object-fit: cover;
+    object-position: center; }
   .products-home-carousel li.product a .star-rating {
     position: absolute;
     right: 0;
@@ -14219,6 +14247,27 @@ section.main-contents {
     @media (max-width: 379px) {
       .products-home-carousel li.product .woocommerce-Price-amount {
         font-size: 16px; } }
+.products-home-carousel .woocommerce ul.products {
+  position: relative; }
+  .products-home-carousel .woocommerce ul.products .owl-nav {
+    position: absolute;
+    top: 36%;
+    width: 100%; }
+    .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev {
+      float: left;
+      outline: none; }
+      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev:hover {
+        background-color: transparent; }
+      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev i {
+        font-size: 28px; }
+    .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next {
+      float: right;
+      margin-right: 4px;
+      outline: none; }
+      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next:hover {
+        background-color: transparent; }
+      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next i {
+        font-size: 28px; }
 
 section#testimonials h4 {
   font-family: 'Montserrat';
