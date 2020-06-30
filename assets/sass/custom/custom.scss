@@ -86,3 +86,24 @@ body {
         text-transform: uppercase;
     }
 }
+
+.page-not-found {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+
+    #main {
+        header {
+            &.page-header {
+                h1 {
+                    &.page-title {
+                        @media (max-width: 480px) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

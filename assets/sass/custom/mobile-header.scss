@@ -132,7 +132,7 @@ header {
     
             &.open-menu-responsive {
                 visibility: visible;
-                opacity: 100%;
+                opacity: 1;
             }
     
             ul {
@@ -141,6 +141,7 @@ header {
                 #menu-list {
                     float: left;
                     width: 100%;
+                    padding-bottom: 30px;
 
                     h6 {
                         float: left;

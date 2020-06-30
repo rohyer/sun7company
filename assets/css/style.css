@@ -13668,6 +13668,15 @@ body {
   padding: 8px 0 8px 10px;
   text-transform: uppercase; }
 
+.page-not-found {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 300px; }
+  @media (max-width: 480px) {
+    .page-not-found #main header.page-header h1.page-title {
+      font-size: 24px; } }
+
 @media (min-width: 992px) {
   header #desktop-header {
     display: flex;
@@ -13805,12 +13814,13 @@ header nav#responsive-menu {
       padding-bottom: 40px; } }
   header nav#responsive-menu.open-menu-responsive {
     visibility: visible;
-    opacity: 100%; }
+    opacity: 1; }
   header nav#responsive-menu ul {
     list-style: none; }
     header nav#responsive-menu ul #menu-list {
       float: left;
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 30px; }
       header nav#responsive-menu ul #menu-list h6 {
         float: left;
         width: 100%;
@@ -14111,6 +14121,8 @@ header nav#responsive-menu {
     position: relative;
     margin: 0;
     padding: 0; }
+    #brands-banners ul .owl-nav {
+      height: 0; }
     #brands-banners ul li {
       float: left;
       width: 100%;
@@ -14257,16 +14269,12 @@ section.main-contents {
     .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev {
       float: left;
       outline: none; }
-      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev:hover {
-        background-color: transparent; }
       .products-home-carousel .woocommerce ul.products .owl-nav button.owl-prev i {
         font-size: 28px; }
     .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next {
       float: right;
       margin-right: 4px;
       outline: none; }
-      .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next:hover {
-        background-color: transparent; }
       .products-home-carousel .woocommerce ul.products .owl-nav button.owl-next i {
         font-size: 28px; }
 

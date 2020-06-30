@@ -36,8 +36,8 @@ $('#brands-banners ul').owlCarousel({
 		0:{
 			items: 2
 		},
-		600:{
-			items: 2
+		480:{
+			items: 3
 		},
 		620:{
 			items: 3
@@ -220,7 +220,7 @@ function sizeMenuResponsive() {
 	const windowHeightMenuPX = windowHeightMenu - 55;
 	const windowHeightMenuFinal = windowHeightMenuPX + 'px';
 
-	responsiveMenuHeight.style.height = windowHeightMenuFinal;
+	responsiveMenuHeight.style.height = 100 + '%';
 }
 sizeMenuResponsive();
 
