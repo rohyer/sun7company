@@ -14106,11 +14106,11 @@ header nav#responsive-menu {
         height: auto; }
         @media (max-width: 991px) and (min-width: 579px) {
           #main-banners ul li img {
-            height: 275px;
+            height: 150px;
             object-fit: cover; } }
         @media (max-width: 578px) {
           #main-banners ul li img {
-            height: 300px;
+            height: 150px;
             object-fit: cover; } }
 
 #brands-banners {
@@ -14169,6 +14169,11 @@ section.main-contents {
   height: auto;
   padding: 35px 0 35px 0;
   background-color: #FFF; }
+  section.main-contents#testimonials, section.main-contents#instagram {
+    padding: 35px 0 35px 0; }
+  @media (max-width: 991px) {
+    section.main-contents {
+      padding: 35px 0 0 0; } }
   section.main-contents h4 {
     font-family: 'Montserrat';
     font-size: 30px;
@@ -14510,8 +14515,11 @@ footer {
     width: 100%;
     margin: 45px auto 0;
     padding-top: 20px;
-    height: 50px;
+    height: 60px;
     text-align: center; }
+    @media (max-width: 991px) {
+      footer #developed-by {
+        margin: 15px auto 90px; } }
     footer #developed-by span {
       float: left;
       width: 100%;
