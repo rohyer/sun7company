@@ -162,6 +162,23 @@
                     }
                 }
             }
+
+            .woocommerce-order {
+                .woocommerce-customer-details {
+                    section {
+                        &.woocommerce-columns {
+                            &.addresses {
+                                .woocommerce-column {
+                                    &.col-12 {
+                                        margin: 15px 0;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

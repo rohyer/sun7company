@@ -15032,6 +15032,9 @@ section#primary main#main #sun-woocommerce-content ul.products li.product {
     float: left;
     padding-left: 0;
     padding-right: 0; }
+  #page-checkout #main-content-checkout .woocommerce .woocommerce-order .woocommerce-customer-details section.woocommerce-columns.addresses .woocommerce-column.col-12 {
+    margin: 15px 0;
+    padding: 0; }
 
 body.page.page-id-1820 {
   position: relative; }

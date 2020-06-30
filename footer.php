@@ -39,7 +39,7 @@
 
                 <h6 id="safe-store">Loja segura</h6>
                 <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.sun7company.com.br">
-                    <img src="/sun7company/wp-content/themes/sun7company/assets/img/protect3.png">
+                    <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/protect3.png">
                 </a>
                 
             </ul>

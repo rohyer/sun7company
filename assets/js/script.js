@@ -297,6 +297,15 @@ if (body.classList[1] == 'tax-product_cat' || body.classList[2] == 'search-resul
 }
 
 // FUNÇÃO PARA AJUSTAR COL
+function resizeCheckoutFinished() {
+	const wooCustomerDetails1 = doc.querySelector(".woocommerce-order .woocommerce-customer-details .woocommerce-columns .woocommerce-column.col-1");
+	const wooCustomerDetails2 = doc.querySelector(".woocommerce-order .woocommerce-customer-details .woocommerce-columns .woocommerce-column.col-2");
+	wooCustomerDetails1.classList.remove('col-1');
+	wooCustomerDetails2.classList.remove('col-2');
+	wooCustomerDetails1.classList.add('col-12');
+	wooCustomerDetails2.classList.add('col-12');
+}
+
 function resizeCheckout() {
 	const customerDetails1 = doc.querySelector('#customer_details .col-1');
 	const customerDetails2 = doc.querySelector('#customer_details .col-2');
@@ -312,7 +321,6 @@ function resizeCheckout() {
 	orderReview.classList.add("col-lg-6");
 	orderReview.classList.add("col-12");
 }
-
 
 // FUNÇÃO PARA AJUSTA COL
 function resizeAccountAdress() {
@@ -501,7 +509,9 @@ for (let i = 0; i < body.classList.length; i++) {
 		relatedProductsSlider();
 	} else if (body.classList[i] == 'woocommerce-edit-address') {
 		resizeAccountAdress();
-	} else if (body.classList[i] == 'woocommerce-checkout') {
-		resizeCheckout();
+	}  else if (body.classList[i] == 'woocommerce-order-received') {
+		resizeCheckoutFinished()
+	} else if (body.classList[i] == 'woocommerce-checkout' && body.classList[7] != 'woocommerce-order-received') {
+		resizeCheckout()
 	}
 }
