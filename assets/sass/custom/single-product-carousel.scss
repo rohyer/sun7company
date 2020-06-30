@@ -1,4 +1,4 @@
-.products-home-carousel {
+.products-home-carousel, .products-home-carousel-responsive {
     li {
         &.product {
             position: relative;
@@ -144,5 +144,27 @@
                 }
             }
         }
+    }
+}
+
+.products-home-carousel {
+    @media (min-width: 992px) {
+        display: block;
+        visibility: visible;
+    }
+    @media (max-width: 991px) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.products-home-carousel-responsive {
+    @media (min-width: 992px) {
+        display: none;
+        visibility: hidden;
+    }
+    @media (max-width: 991px) {
+        display: block;
+        visibility: visible;
     }
 }

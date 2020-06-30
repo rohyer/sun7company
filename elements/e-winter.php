@@ -7,10 +7,12 @@
         </div>
 
         <div class="products-home-carousel">
-
             <?php echo do_shortcode('[products limit="6" columns="4" category="manga-longa"]') ?>
-
-            
         </div>
+
+        <div class="products-home-carousel-responsive">
+            <?php echo do_shortcode('[products limit="6" columns="4" category="manga-longa"]') ?>
+        </div>
+
     </div>
 </section>

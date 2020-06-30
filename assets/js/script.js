@@ -76,7 +76,7 @@ $('#testimonials ul').owlCarousel({
 	}
 });
 
-$('#tshirts ul.products').owlCarousel({
+$('.products-home-carousel ul.products').owlCarousel({
 	loop: true,
 	autoplay: true,
 	autoplayTimeout: 2500,
@@ -90,19 +90,13 @@ $('#tshirts ul.products').owlCarousel({
 	],
 	responsiveClass: true,
 	responsive:{
-		320:{
-			items: 2
-		},
 		992:{
-			items: 3
-		},
-		1199:{
 			items: 4
-		}
+		},
 	}
 });
 
-$('#winter ul.products').owlCarousel({
+$('.products-home-carousel-responsive ul.products').owlCarousel({
 	loop: true,
 	autoplay: true,
 	autoplayTimeout: 2500,
@@ -116,67 +110,9 @@ $('#winter ul.products').owlCarousel({
 	],
 	responsiveClass: true,
 	responsive:{
-		320:{
+		0:{
 			items: 2
 		},
-		992:{
-			items: 3
-		},
-		1199:{
-			items: 4
-		}
-	}
-});
-
-$('#cap ul.products').owlCarousel({
-	loop: true,
-	autoplay: true,
-	autoplayTimeout: 2500,
-	autoplayHoverPause: true,
-	autoplaySpeed: 750,
-	dots: false,
-	nav: true,
-	navText: [
-		"<i class='fas fa-chevron-left'></i>",
-		"<i class='fas fa-chevron-right'></i>"
-	],
-	responsiveClass: true,
-	responsive:{
-		320:{
-			items: 2
-		},
-		992:{
-			items: 3
-		},
-		1199:{
-			items: 4
-		}
-	}
-});
-
-$('#sneakers ul.products').owlCarousel({
-	loop: true,
-	autoplay: true,
-	autoplayTimeout: 2500,
-	autoplayHoverPause: true,
-	autoplaySpeed: 750,
-	dots: false,
-	nav: true,
-	navText: [
-		"<i class='fas fa-chevron-left'></i>",
-		"<i class='fas fa-chevron-right'></i>"
-	],
-	responsiveClass: true,
-	responsive:{
-		320:{
-			items: 2
-		},
-		992:{
-			items: 3
-		},
-		1199:{
-			items: 4
-		}
 	}
 });
 
@@ -428,6 +364,11 @@ function productsSlider() {
 	const capProducts = doc.querySelector('section#cap .products-home-carousel ul.products');
 	const sneakersProducts = doc.querySelector('section#sneakers .products-home-carousel ul.products');
 
+	const tshirtsProductsR = doc.querySelector('section#tshirts .products-home-carousel-responsive ul');
+	const winterProductsR = doc.querySelector('section#winter .products-home-carousel-responsive ul.products');
+	const capProductsR = doc.querySelector('section#cap .products-home-carousel-responsive ul.products');
+	const sneakersProductsR = doc.querySelector('section#sneakers .products-home-carousel-responsive ul.products');
+
 	tshirtsProducts.classList.add('owl-carousel');
 	tshirtsProducts.classList.add('owl-theme');
 	winterProducts.classList.add('owl-carousel');
@@ -436,6 +377,15 @@ function productsSlider() {
 	capProducts.classList.add('owl-theme');
 	sneakersProducts.classList.add('owl-carousel');
 	sneakersProducts.classList.add('owl-theme');
+
+	tshirtsProductsR.classList.add('owl-carousel');
+	tshirtsProductsR.classList.add('owl-theme');
+	winterProductsR.classList.add('owl-carousel');
+	winterProductsR.classList.add('owl-theme');
+	capProductsR.classList.add('owl-carousel');
+	capProductsR.classList.add('owl-theme');
+	sneakersProductsR.classList.add('owl-carousel');
+	sneakersProductsR.classList.add('owl-theme');
 }
 
 
