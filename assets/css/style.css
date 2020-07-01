@@ -14195,6 +14195,26 @@ section.main-contents {
       float: left;
       width: 100%;
       padding: 0 15px; }
+  @media (max-width: 768px) and (min-width: 480px) {
+    .product-banner .banners-home.winter-sneakers a img {
+      object-fit: cover;
+      object-position: right;
+      height: 100px; } }
+  @media (max-width: 479px) {
+    .product-banner .banners-home.winter-sneakers a img {
+      object-fit: cover;
+      object-position: right;
+      height: 90px; } }
+  @media (max-width: 768px) and (min-width: 480px) {
+    .product-banner .banners-home.cap a img {
+      object-fit: cover;
+      object-position: right;
+      height: 55px; } }
+  @media (max-width: 479px) {
+    .product-banner .banners-home.cap a img {
+      object-fit: cover;
+      object-position: right;
+      height: 40px; } }
 
 .products-home-carousel li.product, .products-home-carousel-responsive li.product {
   position: relative;
