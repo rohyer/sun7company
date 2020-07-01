@@ -1,6 +1,10 @@
 section {
     &#instagram {
         h4 {
+            @media (max-width: 768px) {
+                font-size: 26px;
+            }
+
             a {
                 color: #000;
                 text-decoration: none;

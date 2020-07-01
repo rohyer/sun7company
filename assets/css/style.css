@@ -14106,11 +14106,11 @@ header nav#responsive-menu {
         height: auto; }
         @media (max-width: 991px) and (min-width: 579px) {
           #main-banners ul li img {
-            height: 150px;
+            height: 265px;
             object-fit: cover; } }
         @media (max-width: 578px) {
           #main-banners ul li img {
-            height: 150px;
+            height: 265px;
             object-fit: cover; } }
 
 #brands-banners {
@@ -14188,33 +14188,16 @@ section.main-contents {
   width: 100%; }
   .product-banner#tshirts-product-banner {
     margin-top: 50px; }
-  .product-banner .banners-home a {
+  .product-banner .banners-home {
     float: left;
     width: 100%; }
-    .product-banner .banners-home a img {
+    .product-banner .banners-home a {
       float: left;
-      width: 100%;
-      padding: 0 15px; }
-  @media (max-width: 768px) and (min-width: 480px) {
-    .product-banner .banners-home.winter-sneakers a img {
-      object-fit: cover;
-      object-position: right;
-      height: 100px; } }
-  @media (max-width: 479px) {
-    .product-banner .banners-home.winter-sneakers a img {
-      object-fit: cover;
-      object-position: right;
-      height: 90px; } }
-  @media (max-width: 768px) and (min-width: 480px) {
-    .product-banner .banners-home.cap a img {
-      object-fit: cover;
-      object-position: right;
-      height: 55px; } }
-  @media (max-width: 479px) {
-    .product-banner .banners-home.cap a img {
-      object-fit: cover;
-      object-position: right;
-      height: 40px; } }
+      width: 100%; }
+      .product-banner .banners-home a img {
+        float: left;
+        width: 100%;
+        max-width: 100%; }
 
 .products-home-carousel li.product, .products-home-carousel-responsive li.product {
   position: relative;
@@ -14377,6 +14360,9 @@ section#testimonials ul {
       section#testimonials ul li.testimonial-post .testimonial-stars span {
         color: gold; }
 
+@media (max-width: 768px) {
+  section#instagram h4 {
+    font-size: 26px; } }
 section#instagram h4 a {
   color: #000;
   text-decoration: none; }

@@ -41,9 +41,9 @@ $args = array(
                         <div class="testimonial-title">
                             <?php the_title(); ?>
                         </div>
-                        <div class="testimonial-date">
-                            <?php the_date('d/m/Y'); ?>
-                        </div>
+                        <!-- <div class="testimonial-date">
+                            <?php //the_date('d/m/Y'); ?>
+                        </div> -->
                     </li>
                     <?php
                         }

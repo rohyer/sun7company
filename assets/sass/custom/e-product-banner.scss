@@ -7,6 +7,9 @@
     }
 
     .banners-home {
+        float: left;
+        width: 100%;
+
         a {
             float: left;
             width: 100%;
@@ -14,41 +17,7 @@
             img {
                 float: left;
                 width: 100%;
-                padding: 0 15px; 
-            }
-        }
-
-        &.winter-sneakers {
-            a {
-                img {
-                    @media (max-width: 768px) and (min-width: 480px) {
-                        object-fit: cover;
-                        object-position: right;
-                        height: 100px;
-                    }
-                    @media (max-width: 479px) {
-                        object-fit: cover;
-                        object-position: right;
-                        height: 90px;
-                    }
-                }
-            }
-        }
-
-        &.cap {
-            a {
-                img {
-                    @media (max-width: 768px) and (min-width: 480px) {
-                        object-fit: cover;
-                        object-position: right;
-                        height: 55px;
-                    }
-                    @media (max-width: 479px) {
-                        object-fit: cover;
-                        object-position: right;
-                        height: 40px;
-                    }
-                }
+                max-width: 100%;
             }
         }
     }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h4>Siga nosso instagram <a href="https://www.instagram.com/sun7company/">@sun7company</a></h4>
+                <h4>Siga nosso instagram <a href="https://www.instagram.com/sun7company/">@sun7company_</a></h4>
             </div>
         </div>
         <div class="row">
