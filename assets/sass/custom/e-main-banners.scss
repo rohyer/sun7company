@@ -13,38 +13,38 @@
                 width: 100%;
                 height: auto;
 
-                @media (max-width: 991px) and (min-width: 579px) {
-                    height: 265px;
-                    object-fit: cover;
-                }
-                @media (max-width: 578px) {
-                    height: 265px;
-                    object-fit: cover;
-                }
+                // @media (max-width: 991px) and (min-width: 579px) {
+                //     height: 265px;
+                //     object-fit: cover;
+                // }
+                // @media (max-width: 578px) {
+                //     height: 265px;
+                //     object-fit: cover;
+                // }
             }
         }
     }
 }
 
 #main-banners {
-    @media (min-width: 769px) {
+    @media (min-width: 501px) {
         display: block;
         visibility: visible;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         display: none;
         visibility: hidden;
     }
 }
 
 #main-banners-mobile {
-    @media (min-width: 769px) {
+    @media (min-width: 501px) {
         display: none;
         visibility: hidden;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
         display: block;
         visibility: visible;
     }

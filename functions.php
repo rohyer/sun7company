@@ -223,6 +223,11 @@ add_action( 'wp', 'verifica_acessos_cadastro' );
 
 add_theme_support( 'post-thumbnails' );
 
+//add_image_size( 'category-produtos', 1800, 450, true );
+
+add_filter('jpeg_quality', function($arg){return 100;});
+add_filter( 'wp_editor_set_quality', function($arg){return 100;} );
+
 function g_scripts() {
 
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.min.css');
