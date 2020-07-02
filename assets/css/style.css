@@ -14093,25 +14093,43 @@ header nav#responsive-menu {
                 color: #000;
                 text-decoration: none; } }
 
-#main-banners {
+#main-banners, #main-banners-mobile {
   float: left;
   width: 100%; }
-  #main-banners ul {
+  #main-banners ul, #main-banners-mobile ul {
     margin: 0;
     padding: 0; }
-    #main-banners ul li {
+    #main-banners ul li, #main-banners-mobile ul li {
       list-style: none; }
-      #main-banners ul li img {
+      #main-banners ul li img, #main-banners-mobile ul li img {
         width: 100%;
         height: auto; }
         @media (max-width: 991px) and (min-width: 579px) {
-          #main-banners ul li img {
+          #main-banners ul li img, #main-banners-mobile ul li img {
             height: 265px;
             object-fit: cover; } }
         @media (max-width: 578px) {
-          #main-banners ul li img {
+          #main-banners ul li img, #main-banners-mobile ul li img {
             height: 265px;
             object-fit: cover; } }
+
+@media (min-width: 769px) {
+  #main-banners {
+    display: block;
+    visibility: visible; } }
+@media (max-width: 768px) {
+  #main-banners {
+    display: none;
+    visibility: hidden; } }
+
+@media (min-width: 769px) {
+  #main-banners-mobile {
+    display: none;
+    visibility: hidden; } }
+@media (max-width: 768px) {
+  #main-banners-mobile {
+    display: block;
+    visibility: visible; } }
 
 #brands-banners {
   float: left;

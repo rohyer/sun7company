@@ -1,4 +1,4 @@
-#main-banners {
+#main-banners, #main-banners-mobile {
     float: left;
     width: 100%;
 
@@ -23,5 +23,29 @@
                 }
             }
         }
+    }
+}
+
+#main-banners {
+    @media (min-width: 769px) {
+        display: block;
+        visibility: visible;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#main-banners-mobile {
+    @media (min-width: 769px) {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+        visibility: visible;
     }
 }
