@@ -230,7 +230,7 @@ add_filter( 'wp_editor_set_quality', function($arg){return 100;} );
 
 function g_scripts() {
 
-    wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.min.css');
+    wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css');
 
     wp_enqueue_script('jquery-3.4.1', get_template_directory_uri() . '/assets/js/jquery-3.4.1.js');
     
